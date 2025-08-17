@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Components</title>
 
         <!-- CSS Linking-->
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
+
+        <title>Style Guide - Components</title>
     </head>
     <body>
         <header></header>
@@ -19,13 +20,40 @@
             <section>
                 <h2>Components</h2>
                 <p>This is the components for this website</p>
+                <h3>Buttons</h3>
+                <p>This is a showcase of the different button styles.</p>
+
+                <div class="card-container">
+                    <div class="simple-card">
+                        <h4>Primary Button</h4>
+                        <button class="button button-primary">Primary</button>
+                    </div>
+                    <div class="simple-card">
+                        <h4>Secondary Button</h4>
+                        <button class="button button-secondary">
+                            Secondary
+                        </button>
+                    </div>
+                    <div class="simple-card">
+                        <h4>Dark Button</h4>
+                        <button class="button button-dark">Dark</button>
+                    </div>
+                    <div class="simple-card">
+                        <h4>Bright Button</h4>
+                        <button class="button button-bright">Bright</button>
+                    </div>
+                </div>
             </section>
             <section>
                 <h2>Links</h2>
-                <a href="./index.html">Work Phase 1 Home</a>
+                <a class="button button-bright" href="index.html">WP1 Home</a>
+                <a class="button button-primary" href="./colour_scheme.html">Colour Scheme</a>
+                <a class="button button-primary" href="./layout.html">Layout</a>
+                <a class="button button-primary" href="./spacing.html">Spacing</a>
+                <a class="button button-primary" href="./typography.html">Typography</a>
             </section>
         </div>
-                <!-- Linking External Javascript -->
+        <!-- Linking External Javascript -->
         <script type="module" src="js/components.js"></script>
     </body>
 </html>

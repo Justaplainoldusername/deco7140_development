@@ -1,15 +1,30 @@
 /* Global styles */
+
+:root {
+    --color-primary: #999ac6;
+    --color-secondary: #0b3954;
+    --color-light: #fff9ec;
+    --color-dark: #798071;
+    --color-bright: #ff5a5f;
+    --color-background: #fcfafa;
+}
+
 body {
     background-color: var(--color-background);
     color: var(--color-dark);
-    font-family: "Urbanist", san-serif;
+    font-family: "Urbanist", sans-serif;
     line-height: 1.5;
+}
+
+/* Paragraph */
+p {
+    color: var(--color-dark);
 }
 
 /* Headings */
 h1 {
     font-size: 4rem;
-    color: #999ac6;
+    color: var(--color-primary)
 }
 h2 {
     font-size: 3rem;
@@ -19,11 +34,12 @@ h3 {
 }
 h4 {
     font-size: 1rem;
-    color: #0B3954;
+    color: var(--color-secondary);
     font-weight: bold;
 }
 h5 {
     font-size: 0.75rem;
-    color: #0B3954;
+    color: var(--color-secondary);
     font-weight: bold;
 }
+
