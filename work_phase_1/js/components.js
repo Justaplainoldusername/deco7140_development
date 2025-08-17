@@ -3,6 +3,8 @@
  * Keep track of external modules being used
  * */
 import { logMessage } from "./modules/logging.js";
+import { fetchTemperature } from "./modules/temperature.js";
+
 
 /** 
  * CONSTANTS 
@@ -28,5 +30,6 @@ let message = "Page has fully loaded";
 
 // when the page fully loads
 window.addEventListener("load", () => {
-    logMessage(PAGE_NAME, message)
+    logMessage(PAGE_NAME, message);
+    fetchTemperature();
 });
