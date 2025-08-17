@@ -1,0 +1,29 @@
+/* Global styles */
+body {
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    font-family: "Urbanist", san-serif;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1 {
+    font-size: 4rem;
+    color: #999ac6;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1rem;
+    color: #0B3954;
+    font-weight: bold;
+}
+h5 {
+    font-size: 0.75rem;
+    color: #0B3954;
+    font-weight: bold;
+}
