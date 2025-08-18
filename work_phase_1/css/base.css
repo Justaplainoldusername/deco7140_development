@@ -16,21 +16,22 @@ body {
     line-height: 1.5;
 }
 
-/* Paragraph */
-p {
-    color: var(--color-dark);
-}
-
 /* Headings */
 h1 {
     font-size: 4rem;
-    color: var(--color-primary)
+    color: var(--color-primary);
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
 }
 h2 {
     font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
 }
 h3 {
     font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
 }
 h4 {
     font-size: 1rem;
@@ -42,4 +43,14 @@ h5 {
     color: var(--color-secondary);
     font-weight: bold;
 }
+
+/* Paragraphs */
+p {
+    padding-bottom: 1.6rem;
+}
+
+/* Sections 
+section {
+    gap: 2rem;
+}*/
 
