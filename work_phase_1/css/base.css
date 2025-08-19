@@ -1,12 +1,15 @@
 /* Global styles */
 
+/* Primary colors */
 :root {
-    --color-primary: #999ac6;
-    --color-secondary: #0b3954;
-    --color-light: #fff9ec;
-    --color-dark: #798071;
-    --color-bright: #ff5a5f;
-    --color-background: #fcfafa;
+    --color-primary: #999ac6; /* Primary color for highlights and Heading 1 */
+    --color-secondary: #0b3954; /* Secondary highlight for Headings 4 & 5 */
+
+    /* Supporting colors */
+    --color-light: #fff9ec; /* Light color for card backgrounds */
+    --color-dark: #798071; /* Dark color for subdued elements */
+    --color-bright: #ff5a5f; /* Bright color for buttons and warning text */
+    --color-background: #fcfafa; /* Background color for the page */
 }
 
 body {
@@ -53,4 +56,3 @@ p {
 section {
     gap: 2rem;
 }*/
-

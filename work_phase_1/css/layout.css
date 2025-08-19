@@ -4,8 +4,8 @@
     height: 100vh;
     width: 60vw;
     /*margin: 0 auto;*/
-    background-color: var(--color-background);
-    padding-left: 20vw;
+    margin: 0 auto;
+    /*centers the container horizontally */
 }
 
 /* Larger screen (e.g., tablets or desktops) */
