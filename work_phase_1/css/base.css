@@ -1,5 +1,7 @@
 /* Global styles */
 
+/* Font */
+
 /* Primary colors */
 :root {
     --color-primary: #999ac6; /* Primary color for highlights and Heading 1 */
@@ -15,7 +17,7 @@
 body {
     background-color: var(--color-background);
     color: var(--color-dark);
-    font-family: "Urbanist", sans-serif;
+    font-family: 'Urbanist', sans-serif;
     line-height: 1.5;
 }
 
@@ -52,7 +54,7 @@ p {
     padding-bottom: 1.6rem;
 }
 
-/* Sections 
+Sections 
 section {
     gap: 2rem;
-}*/
+}
