@@ -1,0 +1,153 @@
+/*
+    Ultra-Minimal CSS Reset
+    - Procured from ChatGPT 24th August, 2025.
+    — Clears nearly all UA defaults so you start from a blank slate
+    — Animations & transitions are disabled by default (see .allow-motion below)
+    — Safe defaults for typography, media, forms, tables, and semantics
+*/
+
+/* 1) Box-sizing and zero margins/padding everywhere */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2) Base document */
+html,
+body {
+    height: 100%;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    min-height: 100%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3) Remove default borders/backgrounds and make fonts inherit by default */
+:where(*) {
+    border: 0 solid transparent;
+    background: none;
+}
+:where(h1, h2, h3, h4, h5, h6) {
+    font: inherit;
+    font-weight: inherit;
+}
+:where(p, blockquote, figure, figcaption) {
+    margin: 0;
+}
+
+/* 4) Links */
+:where(a) {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 5) Lists */
+:where(ul, ol, menu) {
+    list-style: none;
+}
+
+/* 6) Media elements */
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+    display: block;
+    max-width: 100%;
+}
+:where(img, svg) {
+    vertical-align: middle;
+}
+
+/* 7) Tables */
+:where(table) {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:where(th, td) {
+    text-align: left;
+    font-weight: normal;
+}
+
+/* 8) Forms */
+:where(input, button, textarea, select) {
+    font: inherit;
+    color: inherit;
+}
+:where(input, textarea, select, button) {
+    background: none;
+    border-radius: 0;
+    appearance: none;
+}
+:where(textarea) {
+    resize: none;
+}
+:where(fieldset) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:where(legend) {
+    padding: 0;
+}
+
+/* 9) Quotes */
+:where(blockquote, q) {
+    quotes: none;
+}
+:where(blockquote::before, blockquote::after, q::before, q::after) {
+    content: none;
+}
+
+/* 10) Semantics */
+:where(main, nav, section, article, aside, header, footer) {
+    display: block;
+}
+:where([hidden]) {
+    display: none !important;
+}
+:where(dialog) {
+    padding: 0;
+    border: 0;
+}
+:where(pre, code, kbd, samp) {
+    font: inherit;
+}
+
+/* 11) Scrollbars/scroll behavior kept neutral; re-style as needed */
+:where(html) {
+    scroll-behavior: auto;
+}
+
+/* 12) Disable transitions & animations by default for a true blank slate */
+*,
+*::before,
+*::after {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* 13) Opt back into motion when you’re ready */
+.allow-motion *,
+.allow-motion *::before,
+.allow-motion *::after {
+    transition: var(--motion-transition, all 200ms ease);
+    animation: var(--motion-animation, none);
+}
+
+/* 14) Respect users who prefer reduced motion even when motion is allowed */
+@media (prefers-reduced-motion: reduce) {
+    .allow-motion *,
+    .allow-motion *::before,
+    .allow-motion *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
