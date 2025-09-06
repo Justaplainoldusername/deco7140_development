@@ -37,8 +37,61 @@
     color: white;
     font-size: 0.8rem;
     font-weight: bold;
-    width: 120px; /* Sets a fixed width for the tooltip */
-    height: 30px; /* Sets a fixed height, making the tooltip a perfect circle */
+        padding: 1rem;
+    width: auto; /* Sets a fixed width for the tooltip */
+    height: auto; /* Sets a fixed height, making the tooltip a perfect circle */
+ display: flex; /* Uses Flexbox to center the text inside the circle */
+    align-items: center; /* Vertically centers the text inside the tooltip */
+    justify-content: center; /* Horizontally centers the text inside the tooltip */
+    border-radius: 10%; /* Creates rounded corners */
+    opacity: 0; /* Initially hides the tooltip */
+    transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
+}
+
+
+
+/* INTERACTIVE HIGHLIGHTING - USER STORIES */
+/* Base Highlight Style */
+.interactive-highlight-stories {
+    position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
+    background-color: rgba(
+        255,
+        215,
+        0,
+        0.3
+    ); /* Light yellow highlight with 30% transparency */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+    padding: 2px 5px; /* Adds small space inside the highlight for better readability */
+    border-radius: 5px; /* Rounds the corners slightly for a softer look */
+    transition: background 0.3s ease; /* Smooth transition effect when background changes */
+}
+
+/* Show Number on Hover (Desktop) */
+@media (hover: hover) {
+    .interactive-highlight-stories:hover::after {
+        opacity: 1;
+    }
+}
+
+/* Show Number on Tap (Mobile) */
+.interactive-highlight-stories:focus::after,
+.interactive-highlight-stories:active::after {
+    opacity: 1;
+}
+
+/* Tooltip Styling for Highlighted Text */
+.interactive-highlight-stories::after {
+    content: attr(user-card); /* See the explanation */
+    position: absolute; /* Positions the tooltip relative to the highlighted text */
+    top: -5px; /* Moves the tooltip slightly above the highlighted text */
+    right: -15px; /* Moves the tooltip slightly to the right of the highlighted text */
+    background: var(--secondary-color);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: auto; /* Sets a fixed width for the tooltip */
+    height: auto; /* Sets a fixed height, making the tooltip a perfect circle */
     display: flex; /* Uses Flexbox to center the text inside the circle */
     align-items: center; /* Vertically centers the text inside the tooltip */
     justify-content: center; /* Horizontally centers the text inside the tooltip */
@@ -49,6 +102,17 @@
 
 /* Value Box */
 .value-box {
+    border: 2px solid var(--primary-color); /* Bright Blue border */
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    background: var(--default-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* User Story Box */
+.user-story-box {
     border: 2px solid var(--primary-color); /* Bright Blue border */
     border-radius: 8px;
     padding: 1rem 1.2rem;
@@ -136,4 +200,56 @@ transform: rotateY(180deg);
 .flip-card:focus .flip-card-inner,
 .flip-card:active .flip-card-inner {
 transform: rotateY(180deg);
+}
+
+/*User Stories Styles*/
+
+.interview {
+    border: 2px solid var(--primary-color); /* Bright Blue border */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    background: var(--default-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-name {
+    font-size: 1.6rem; /* 1 x 1.618 rounded */
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.initial-prompt {
+    font-size: 16px;
+}
+
+.question,
+.response {
+    max-width: 70%;
+    padding: 0.8rem 1rem;
+    border-radius: 16px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.question {
+  align-self: flex-start;
+  background: #e6f0ff;
+  border: 1px solid #99c2ff;
+  color: #003366;
+      font-family: 'Nunito', sans-serif; /* new */
+    font-size: 1rem;
+}
+
+.response {
+  align-self: flex-end;
+  background: #f1f1f1;
+  border: 1px solid #cccccc;
+  color: #333333; 
+      font-family: 'Nunito', sans-serif; /* new */
+    font-size: 1rem;  
 }
