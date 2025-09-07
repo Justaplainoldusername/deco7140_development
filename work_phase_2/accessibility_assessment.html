@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <!-- Font Import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <!-- CSS Linking -->
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
@@ -15,14 +16,51 @@
         <title>Accessibility Assessment</title>
     </head>
     <body>
+        <nav class="navbar">
+            <!--<button class="menu-toggle" aria-label="Toggle navigation">☰</button>-->
+            <button class="menu-toggle" aria-label="Toggle navigation">Burger</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="client_needs_analysis.html">Client Needs</a></li>
+                <li><a href="user_stories.html">User Stories</a></li>
+                <li><a href="accessibility_assessment.html">Accessibility</a></li>
+                <li><a href="ethics_analysis.html">Ethics</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAi Acknowledgement</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <header>
                 <h1>Accessibility Assessment</h1>
             </header>
             <section>
-                <h2>What's in this website?</h2>
-                <p>A page dedicated to Accessibility Assessment.</p>
+                <p>Relevant Criteria:</p>
+                <ul>
+                    <li>Review the Client and User needs you have already identified</li>
+                    <li>Identify the success criteria that support those needs</li>
+                </ul>
+                    <p>Create a rationale</p>
+                    <ul>
+<li>Create a brief rationale as to why these success criteria are relevant</li>
+<li>Link the rationale to the Client and User Needs you have identified</li>
+</ul>
+</p>
+            </section>
+            <section>
+                <p>From the <a href=https://www.w3.org/TR/WCAG22>WCAG2.2<a></p>
+            </section>
+             <section>
+            <p>Success Criterion 1.1.1 Non-text Content </p>
+            <p>Rationale: </p>
+            <p>Relevant Client and User Needs:</p>
+            </section>
+            <section>
+            <p>Success Criterion: </p>
+            <p>Rationale: </p>
+            <p>Relevant Client and User Needs:</p>
             </section>
         </div>
+
+        <!-- Linking External JavaScript -->
+        <script type="module" src="js/menu.js"></script> 
     </body>
 </html>

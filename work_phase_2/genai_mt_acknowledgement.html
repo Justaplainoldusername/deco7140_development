@@ -15,14 +15,50 @@
         <title>GenAI Mt Acknowledgement</title>
     </head>
     <body>
+                <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="client_needs_analysis.html">Client Needs</a></li>
+                <li><a href="user_stories.html">User Stories</a></li>
+                <li><a href="accessibility_assessment.html">Accessibility</a></li>
+                <li><a href="ethics_analysis.html">Ethics</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAi Acknowledgement</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <header>
-                <h1>GenAI Mt Acknowledgement</h1>
+                <h1>GenAI & MT Acknowledgement</h1>
             </header>
             <section>
-                <h2>What's in this website?</h2>
-                <p>A page dedicated to GenAI.</p>
+                <p>Generative AI was used in the preparation of this assignment.</p>
+                <h3>How was AI used?</h3>
+                <p>Both ChatGPT and Microsoft 365 Copilot were used to develop the User Stories. Answers to the interview questions are taken directly from the AIs' responses to the prompts with a few minor edits (e.g. remove "Answering as Bob") to ensure the text fit with the tone and language of a real-life interview.</p>
+                <p>ChatGPT was also used to generate code for:</p>
+                <ul>
+                    <li>The .value-box element</li>
+                    <li>The user stories styling</li>
+                    <li>The spacing helper classes, and</li>
+                    <li>The navigation menu.</li> 
+                </ul>
+                <p>Examples of prompts (other than the interview questions) used are:</p>
+                <ul>
+                    <li>"Please create css for two styles (.question and .response) that look like two people having a conversation."</li>
+                    <li>"Create some css and javascript that gives me a menu like this on on my website. The colour should be --primary-color."</li>
+                    <li><img src="./assets/snip_of_navbar.png" alt="Snip of navigate bar example" width="400" </li>
+                </ul>
+                <h3>How did AI support learning?</h3>
+                <p>Using AI to generate code allowed me to build results quickly, which meant that I was able to experiment with more ideas. I could sample various styles and use my visceral response to inform my design choices. I could then reflect on why certain styles evoked positive responses while others did not, which will help develop my design preferences.</p>
+                <p>It also empowered me to experiment with code that is far more complex than I would personally write. This is akin to working with a mentor, someone with several years more experience who can introduce me to concepts and techniques beyond my current skill level. Once inputted into VSCode, I could change or eliminate lines of code to understand how it impacted my design.</p>
+                <h3>Critically evaluate AI's effectiveness</h3>
+                <p>ChatGPT proved very effective at delivering functional code with minimal prompting. In some cases, the code it developed was too anticipatory of my needs. For example, ChatGPT included a hover-effect for my value-box which I didn't prompt for and omitted from my code because the effect felt unnecessary for that element. In general, however, it provided what I requested with only minimal adjustments required.</p>
+                <p>Both ChatGPT and CoPilot were effective at generating content for the User Stories. There were some surprisingly insightful responses (such as the users' preference for a laptop or tablet over a phone due to the screen size) that will be very useful for informing my approach. However the answers quickly became repetitive despite new characters being inputted into the system. This implies that GenAI may be a good tool for early brainstorming but should not be relied upon to provide a nuanced account of the diversity of the users and their browsing preferences.</p>
+                <p>In terms of creative design, my chosen GenAI platforms will be limited by the quality of my prompt. Being new to website design, there are terms, techniques and concepts that I am not yet aware of, and my inability to use these in my prompts will determine the AIs' limitations. As my webdesign skills grow, so too will my ability to engineer prompts that will generate better code with improved functionality and aesthetics. </p>
+            
             </section>
         </div>
+        <!-- Linking External JavaScript -->
+        <script type="module" src="js/genai_mt_acknowledgement.js"></script>
+
     </body>
 </html>

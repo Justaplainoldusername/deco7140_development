@@ -18,6 +18,17 @@
         <title>Client Needs Analysis</title>
     </head>
     <body>
+                <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="client_needs_analysis.html">Client Needs</a></li>
+                <li><a href="user_stories.html">User Stories</a></li>
+                <li><a href="accessibility_assessment.html">Accessibility</a></li>
+                <li><a href="ethics_analysis.html">Ethics</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAi Acknowledgement</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <header>
                 <h1>WP2 - Client Needs Analysis</h1>
@@ -46,21 +57,18 @@
                 </p>
                 <h3>Project Overview</h3>
                 <p>
-                    We are commissioning the development of
-                    <span
-                        class="interactive-highlight"
-                        data-card="Value 1: User-friendly, ethical, accessible website design"
-                    >
-                        dynamic, user-friendly websites</span
-                    >
-                    that
-                    <span
-                        class="interactive-highlight"
-                        data-card="Value 2: Community representation and support"
-                        >represent and support different communities</span
-                    >. Each website should serve as a central hub where
-                    community members can share resources, highlight events, and
-                    foster meaningful connections. The websites must not include
+                    We are commissioning the development of dynamic, 
+                    <span class="interactive-highlight" data-card="Value 3: Inclusivity">
+                    user-friendly</span> websites that 
+                    <span class="interactive-highlight" data-card="Value 1: Representation">
+                    represent</span> and support different communities. Each website 
+                    should serve as a central hub where community members can 
+                    <span class="interactive-highlight" data-card="Value 2: Connection">
+                    share resources</span>, 
+                    <span class="interactive-highlight" data-card="Value 2: Connection">
+                    highlight events</span>, and foster 
+                    <span class="interactive-highlight" data-card="Value 2: Connection">
+                    meaningful connections</span>. The websites must not include
                     any form of
                     <span
                         class="interactive-highlight"
@@ -74,32 +82,41 @@
                     The websites must be
                     <span
                         class="interactive-highlight"
-                        data-card="Value 1: User-friendly, ethical, accessible website design"
-                        >accessible, mobile-friendly,</span
-                    >
-                    and
+                        data-card="Value 3: Inclusivity"
+                        >accessible</span>, 
                     <span
                         class="interactive-highlight"
-                        data-card="Value 2: Community representation and support"
-                        >reflect the diverse needs of the selected community
-                        focus</span
-                    >
+                        data-card="Value 3: Inclusivity">                        
+                        mobile-friendly</span>,
+                    
+                    and reflect the 
+                    <span
+                        class="interactive-highlight"
+                        data-card="Value 3: Inclusivity"
+                        >diverse needs</span>of the selected community
+                        focus
+                    
                     area while adhering to our mission of
                     <span
                         class="interactive-highlight"
-                        data-card="Value 4: Inclusivity within and beyond the community"
-                        >inclusivity,</span
-                    >
-                    accessibility, and ethical design. Each website should also
+                        data-card="Value 3: Inclusivity"
+                        >inclusivity</span>,
+                    accessibility, and 
+                    
+                                        <span
+                        class="interactive-highlight"
+                        data-card="Value 3: Inclusivity"
+                        >
+                    ethical design</span>. Each website should also celebrate the
                     <span
                         class="interactive-highlight"
-                        data-card="Value 2: Community representation and support"
-                        >celebrate the unique characteristics</span
+                        data-card="Value 1: Representation"
+                        >unique characteristics</span
                     >
                     of its chosen community and support
                     <span
                         class="interactive-highlight"
-                        data-card="Value 5: Interactivity and engagement"
+                        data-card="Value 2: Connection"
                         >meaningful interaction and engagement</span
                     >.
                 </p>
@@ -121,13 +138,18 @@
                 <p>Each website must serve two key groups:</p>
                 <ol>
                     <li>
+   
                         Community Members: Individuals within the selected
                         community who seek representation, resources, and
                         connection.
                     </li>
                     <li>
+  
                         General Audience: Broader society, who can use the
-                        website to learn about the community and its
+                        website to                                                                   <span
+                        class="interactive-highlight"
+                        data-card="Value 1: Representation"
+                        >learn about the community</span> and its
                         contributions.
                     </li>
                 </ol>
@@ -140,8 +162,11 @@
                 <ol>
                     <li>
                         Represent and celebrate the identity of the chosen
-                        community, recognising and representing the diversity
-                        within the community rather than relying on stereotypes.
+                        community, recognising and representing the                     <span
+                        class="interactive-highlight"
+                        data-card="Value 1: Representation"
+                        >diversity
+                        within the community</span> rather than relying on stereotypes.
                     </li>
                     <li>
                         Provide clear, accessible information and resources to
@@ -156,6 +181,45 @@
                         design principles are upheld.
                     </li>
                 </ol>
+                <p><strong>Functional Requirements</strong></p>
+                <p>Regardless of the chosen community focus, the website must include:</p>
+                <ol>
+                    <li><strong>Response Design:</strong> Use a mobile-first approach to create a responsive, user-friendly design across devices, with support for Progressive Web App (PWA) functionality to ensure compatibility across smartphones and desktop/laptops.</li>
+                    <li><strong>Accessible Design:</strong>Meet WCAG 2.2 Level AA standards, ensuring that navigation, text alternatives, and other features are accessible to all users.</li>
+                    <li><strong>Dynamic Content</strong>Integrate at least one interactive or dynamic feature, from the following options:
+                    <ul>
+                        <li><strong>Resource directory</strong>where community members can POST information that is relevant to the community. Resources may be for example, recipes, reviews of travel destinations, tips for supporting mental health, etc.</li>
+                        <li><strong>Events directory</strong>: where community members can POST events for other members to see.</li>
+                        <li><strong>Discussion board</strong>: a simple discussion board where community members can interact with each other.</li>
+                        <li><strong>Content ratings</strong>: a rating system where users can rate webpage content (including dynamic content) and average ratings are then available.</li>
+                    </ul>
+                    </li>
+                </ol>
+            <p><strong>APIs for Dynamic Content</strong></p>
+            <p>APIs have been developed by the CCI backend team to support these dynamic features, and you must use these APIs exclusively.                    <span
+                        class="interactive-highlight"
+                        data-card="Additional Needs"
+                        >No alternative APIs or external data sources</span> may be used in your implementation.</p>
+            <p><strong>Additional Requirement -                     <span
+                        class="interactive-highlight"
+                        data-card="Additional Needs"
+                        >Newsletter Subscription Feature</strong></p>
+                <p>As part of each website development, we want you to integrate a third-party newsletter subscription plug-in provided by one of our funders. This plug-in is designed to allow users to subscribe to newsletters from the funder. When subscribing, users will be asked to complete the following information:</p>
+                <ul>
+                <li>Full name</li> 
+                <li>Email address</li> 
+                <li>Occupation</li>
+                <li>Annual income</li> 
+                <li>Household size</li> 
+                <li>Sexuality</li> 
+                <li>Gender</li> 
+                <li>Spending habits</li> 
+                <li>Type of phone they currently use</li> 
+                <li>Monthly spend on dining out/takeaway food</li> 
+                <li>Number of credit cards they have with the credit limit on each card</li> 
+                </ul>
+                                <p>The funder has indicated that this information will help them better understand the website audience for their reporting and tailoring future resources. </p>
+
             </section>
 
             <section>
@@ -163,27 +227,71 @@
                 <div class="value-box">
                     <!-- Value 1-->
                     <h3>
-                        Value 1: User-Friendly, accessible, ethical Website
-                        Design
+                        Value 1: Representation
                     </h3>
-                    <div class="flip-card-container"></div>
+                    <p>The client values representation. Their goal is provide a website that represents the chosen community.</p>
+                    <div class="flip-card-container">
+                        <!-- Flip Card 1.1-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Unique characteristics</strong></p>
+                                    <p></p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong>Feature</strong></p>
+                                    <p>A page dedicated to promoting the unique characteristics of the group.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flip Card 1.2-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Learn about the community</strong></p>
+                                    <p></p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong>Feature</strong></p>
+                                    <p>A page for the general public to learn about the community and read answers to commonly asked questions.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- Flip Card 2.1-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Diversity within the community</strong></p>
+                                    <p></p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong>Feature</strong></p>
+                                    <p>A page dedicated to stories from the community members that challenge common stereotypes</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <!-- Value 2-->
 
                 <div class="value-box">
-                    <h3>Value 2: Community representation and support</h3>
+                    <h3>Value 2: Connection</h3>
+                    <p>The client values connection. Their goal is to create a website that enables connection within the chosen community.</p>
                     <div class="flip-card-container">
                         <!-- Flip Card 2.1-->
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Card XX</strong></p>
-                                    <p>Users need .. [add details here].</p>
+                                    <p><strong>Share resources</strong></p>
+                                    <p></p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
-                                    <p>
-                                        [describe your suggested feature here].
+                                    <p>A resources directory for users to share, access and download resources.</p>
                                     </p>
                                 </div>
                             </div>
@@ -192,13 +300,28 @@
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Card XX</strong></p>
-                                    <p>Users need .. [add details here].</p>
+                                    <p><strong>Meaningful connections, interaction and engagement</strong></p>
+                                    <p></p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
                                     <p>
-                                        [describe your suggested feature here].
+                                        A discussion board for users to post and answer questions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- Flip Card 2.2-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Highlight events</strong></p>
+                                    <p></p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong>Feature</strong></p>
+                                    <p>
+                                        A section on the discussion board for users to post and answer questions.
                                     </p>
                                 </div>
                             </div>
@@ -207,23 +330,20 @@
                 </div>
                 <!-- Value 3-->
                 <div class="value-box">
-                    <h3>Value 3: A non-commercial space</h3>
+                    <h3>Value 3: Inclusivity</h3>
+                    <p>The client values inclusivity. Their goal is to create a space that is inclusive to all, including non-community members.</p>
                     <div class="flip-card-container">
                         <!-- Flip Card 3.1-->
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
+                                    <p><strong>User-friendly</strong></p>
                                     <p>
-                                        User awareness of the non-commercial
-                                        rules of the site.
                                     </p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
-                                    <p>
-                                        A page outlining the rules and outcomes
-                                        of commercial activities on the site.
+                                    <p></p>
                                     </p>
                                 </div>
                             </div>
@@ -232,15 +352,13 @@
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
-                                    <p>Moderation of commercial activity.</p>
+                                    <p><strong>Accessible</strong></p>
+                                    <p></p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
                                     <p>
-                                        Enable tagging that allows users to
-                                        report commercial activities occuring on
-                                        the site.
+                                        Adherance to the WCAG2.2 Level AA standards.
                                     </p>
                                 </div>
                             </div>
@@ -249,14 +367,40 @@
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
-                                    <p>Removal of commercial activity.</p>
+                                    <p><strong>Mobile-friendly</strong></p>
+                                    <p></p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong>Feature</strong></p>
+                                    <p>A mobile-first approach with support for Progressive Web App (PWA) functionality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flip Card 3.4-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Diverse needs</strong></p>
+                                    <p></p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
                                     <p>
-                                        Moderator login that allows approved
-                                        moderators to remove commercial content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flip Card 3.5-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Ethical design</strong></p>
+                                    <p></p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong>Feature</strong></p>
+                                    <p>
                                     </p>
                                 </div>
                             </div>
@@ -265,86 +409,80 @@
                 </div>
                 <!-- Value 4-->
                 <div class="value-box">
-                    <h3>Value 4: Inclusivity within and beyond the community</h3>
+                    <h3>Value 4: Non-commercial</h3>
+                    <p>The client values a non-commercial space. Their goal is to keep the website non-commercial.</p>
                     <div class="flip-card-container">
                         <!-- Flip Card 4.1-->
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
+                                    <p><strong>Prevent commercial activity</strong></p>
                                     <p>
-                                        Welcoming to non-community members.
                                     </p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
-                                    <p>
-                                        A page that introduces the values,
-                                        interests and backgrounds of the target
-                                        community.
+                                    <p>A Terms of Use that advises against conducting commercial activity.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Flip Card 4.1-->
+                        <!-- Flip Card 4.2-->
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
+                                    <p><strong>Manage commercial activity</strong></p>
                                     <p>
-                                        Accepting of diversity within the community.
                                     </p>
                                 </div>
                                 <div class="flip-card-back">
                                     <p><strong>Feature</strong></p>
-                                    <p>
-                                        A page that introduces the values,
-                                        interests and backgrounds of the target
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Value 5-->
-                <div class="value-box">
-                    <h3>Value 5: Interactivity and engagement</h3>
-                    <div class="flip-card-container">
-                        <!-- Flip Card 5.1-->
-                        <div class="flip-card" tabindex="0">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
-                                    <p>Ability for users to share resources</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <p><strong>Feature</strong></p>
-                                    <p>
-                                        A directory that allows community members to share advice and resources.
+                                    <p>User driven flag system that alerts moderators to commercial activity.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Flip Card 5.2-->
+                    </div>
+                </div>
+                <div class="value-box">
+                    <h3>Additional Needs</h3>
+                    <p>The client has additional needs that are not directly bound to a value.</p>
+                    <div class="flip-card-container">
+                        <!-- Flip Card 5.1-->
                         <div class="flip-card" tabindex="0">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p><strong>Need # </strong></p>
-                                    <p>Opportunities for meaningful interaction</p>
+                                    <p><strong>No Alternative APIs or data sources</strong></p>
+                                    <p>
+                                    </p>
                                 </div>
                                 <div class="flip-card-back">
-                                    <p><strong>Feature</strong></p>
-                                    <p>
-                                        A moderated discussion board for community members to share and connect.
+                                    <p><strong></strong></p>
+                                    <p>Use only CCI developed APIs and data sources.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <!-- Flip Card 5.2-->
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p><strong>Newsletter Subscription Feature</strong></p>
+                                    <p>
+                                    </p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p><strong></strong></p>
+                                    <p>Allows users to signup for the newletter and the client to capture user data.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </section>
         </div>
+                <!-- Linking External JavaScript -->
+        <script type="module" src="js/client_needs.js"></script> 
     </body>
 </html>

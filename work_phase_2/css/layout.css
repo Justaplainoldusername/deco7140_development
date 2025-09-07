@@ -2,7 +2,7 @@
 
 .container {
     height: 100vh;
-    width: 60vw;
+    width: 80vw;
     /*margin: 0 auto;*/
     margin: 0 auto;
     /*centers the container horizontally */
@@ -68,27 +68,22 @@
 /* Bottom */
 .mb-0 { margin-bottom: var(--space-0); }
 .mb-1 { margin-bottom: var(--space-1); }
-/* ...repeat for 2–6 */
 
 /* Start (logical left in LTR / right in RTL) */
 .ms-0 { margin-inline-start: var(--space-0); }
 .ms-1 { margin-inline-start: var(--space-1); }
-/* ...repeat for 2–6 */
 
 /* End */
 .me-0 { margin-inline-end: var(--space-0); }
 .me-1 { margin-inline-end: var(--space-1); }
-/* ...repeat for 2–6 */
 
 /* X-axis (start + end) */
 .m-x-0 { margin-inline: var(--space-0); }
 .m-x-1 { margin-inline: var(--space-1); }
-/* ...repeat for 2–6 */
 
 /* Y-axis (top + bottom) */
 .m-y-0 { margin-block: var(--space-0); }
 .m-y-1 { margin-block: var(--space-1); }
-/* ...repeat for 2–6 */
 
 /* ==========================
    Padding Utilities
@@ -111,25 +106,21 @@
 /* Bottom */
 .pb-0 { padding-bottom: var(--space-0); }
 .pb-1 { padding-bottom: var(--space-1); }
-/* ...repeat */
+.pb-2 { padding-bottom: var(--space-2); }
 
 /* Start */
 .ps-0 { padding-inline-start: var(--space-0); }
 .ps-1 { padding-inline-start: var(--space-1); }
-/* ...repeat */
 
 /* End */
 .pe-0 { padding-inline-end: var(--space-0); }
 .pe-1 { padding-inline-end: var(--space-1); }
-/* ...repeat */
 
 /* X-axis */
 .p-x-0 { padding-inline: var(--space-0); }
 .p-x-1 { padding-inline: var(--space-1); }
 .p-x-3 { padding-inline: var(--space-3); }
-/* ...repeat */
 
 /* Y-axis */
 .p-y-0 { padding-block: var(--space-0); }
 .p-y-1 { padding-block: var(--space-1); }
-/* ...repeat */
