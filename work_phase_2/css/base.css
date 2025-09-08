@@ -14,7 +14,8 @@ body {
 
 /* Typography (Using Golden Ratio) */
 h1 {
-    font-size: 4.2rem; /* 2.6 x 1.618 rounded */
+    font-size: 4.2rem; /* 2.6 x 1.618 rounded
+    /*font-size: 6vw; */
     color: var(--primary-color);
 }
 
@@ -22,14 +23,19 @@ h2 {
     font-size: 2.6rem; /* 1.6 x 1.618 rounded */
     font-weight: 700;
     color: var(--primary-color);
+    padding-top: 1rem;
 }
 
 h3 {
     font-size: 1.6rem; /* 1 x 1.618 rounded */
     font-weight: 700;
     color: var(--primary-color);
+    padding-top: 1rem;
 }
 
+p {
+    padding-top: 1rem;
+}
 ol {
 list-style-type: lower-alpha;
 padding-inline: var(--space-3);
