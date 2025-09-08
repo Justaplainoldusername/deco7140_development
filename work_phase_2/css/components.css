@@ -1,7 +1,6 @@
 /* INTERACTIVE HIGHLIGHTING */
 /* Base Highlight Style */
-.interactive-highlight,
-.interactive-highlight-stories {
+.interactive-highlight {
     position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
     background-color: rgba(
         255,
@@ -17,23 +16,19 @@
 
 /* Show Number on Hover (Desktop) */
 @media (hover: hover) {
-    .interactive-highlight,
-    .interactive-highlight-stories:hover::after {
+    .interactive-highlight:hover::after {
         opacity: 1;
     }
 }
 
 /* Show Number on Tap (Mobile) */
-.interactive-highlight,
-.interactive-highlight-stories:focus::after,
-.interactive-highlight,
-.interactive-highlight-stories:active::after {
+.interactive-highlight:focus::after,
+.interactive-highlight:active::after {
     opacity: 1;
 }
 
 /* Tooltip Styling for Highlighted Text */
-.interactive-highlight,
-.interactive-highlight-stories::after {
+.interactive-highlight::after {
     content: attr(data-card); /* See the explanation */
     position: absolute; /* Positions the tooltip relative to the highlighted text */
     top: -5px; /* Moves the tooltip slightly above the highlighted text */
@@ -53,18 +48,56 @@
     transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
 }
 
+
+
 /* INTERACTIVE HIGHLIGHTING - USER STORIES*/
+/* Base Highlight Style */
 
+.interactive-highlight-stories {
+    position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
+    background-color: rgba(
+        255,
+        215,
+        0,
+        0.3
+    ); /* Light yellow highlight with 30% transparency */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+    padding: 2px 5px; /* Adds small space inside the highlight for better readability */
+    border-radius: 5px; /* Rounds the corners slightly for a softer look */
+    transition: background 0.3s ease; /* Smooth transition effect when background changes */
+}
 /* Show Number on Hover (Desktop) */
-
+@media (hover: hover) {
+   
+    .interactive-highlight-stories:hover::after {
+        opacity: 1;
+    }
+}
 /* Show Number on Tap (Mobile) */
-
+.interactive-highlight-stories:focus::after,
+.interactive-highlight-stories:active::after {
+    opacity: 1;
+}
 /* Tooltip Styling for Highlighted Text */
 .interactive-highlight-stories::after {
     content: attr(user-card); /* See the explanation */
+    position: absolute; /* Positions the tooltip relative to the highlighted text */
+    top: -5px; /* Moves the tooltip slightly above the highlighted text */
+    right: -15px; /* Moves the tooltip slightly to the right of the highlighted text */
     background: var(--secondary-color);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 1rem;
     width: 20rem; /* auto-fits tooltip to content length*/
     height: fit-content; /* Sets height to 40px*/
+    display: flex; /* Uses Flexbox to center the text inside the circle */
+    align-items: center; /* Vertically centers the text inside the tooltip */
+    justify-content: center; /* Horizontally centers the text inside the tooltip */
+    border-radius: 10%; /* Creates rounded corners */
+    opacity: 0; /* Initially hides the tooltip */
+    transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
+
 }
 
 /* Value Box and User Story Box */
