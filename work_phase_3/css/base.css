@@ -1,0 +1,115 @@
+/*--------------------
+    DEFAULT COLOURS
+----------------------*/
+:root {
+    --primary-color: #233131; /* Dark Aqua */
+    --secondary-color: #557373; /* Medium Aqua */
+    --accent-color: #a64d2d; /* Burnt Orange */
+    --text-color: #99918b; /* Dark Grey */
+    --background-color: #fffaf5; /* Light Beige */
+}
+
+/*---------------------------
+    HEADINGS AND PARAGRAPH
+-----------------------------*/
+
+.page-title {
+
+    font-family: "Cinzel", serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding-bottom: 1rem;
+
+}
+
+@media (max-width: 767.9px) {.page-title::after {
+    line-height: 1.5;
+    content:"\A⚓︎";
+    white-space: pre;
+
+
+}
+}
+@media (min-width: 768px) { .page-title {
+        font-size: 4.2rem;
+        text-align: left;
+}
+}
+
+
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) { h1 {
+        font-size: 2.8rem;
+        text-align: left;
+}
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.6rem;
+    font-weight: medium;
+    text-align: left;
+    color: var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) { h2 {
+        font-size: 2.8rem;
+        text-align: left;}
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    line-height: 115%;
+}
+
+
+/*---------------------
+    NAVIGATION MENUS   
+-----------------------*/
+/* Base styles */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Icon styling for mobile nav menu */
+#nav-mobile ul li a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+/*---------
+    BODY
+-----------*/
+
+body {
+    padding-top: 50px;
+    background-color: var(--background-color);
+}
