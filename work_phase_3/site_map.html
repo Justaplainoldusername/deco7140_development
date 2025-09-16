@@ -1,32 +1,473 @@
-Behavioural Design<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- CSS Linking -->
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+        <link rel="stylesheet" href="css/component_skeletons/accordion.css" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/favicon_io/favicon.ico"
+        />
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
 
-
-<title>Site Map</title>
-</head>
-<body>
-<nav id="nav-mobile" aria-label="Main Navigation"></nav>
-<nav id="nav-desktop" aria-label="Main Navigation"></nav>    
-<main>
-        <div class="container">
-
-    <h1>Site Map</h1>
-        </div>
-</main>
-</body>
+        <title>Site Map</title>
+    </head>
+    <body>
+        <header>
+            <nav id="nav-mobile" aria-label="Main Navigation">
+                <ul>
+                    <li>
+                        <a href="index.html"><span class="icon">🏠</span></a>
+                    </li>
+                    <li>
+                        <a href="site_map.html" aria-current="page"
+                            ><span class="icon">🧭</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="style_guide.html"
+                            ><span class="icon">🎨</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="ethical_response.html"
+                            ><span class="icon">⚖️</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="genai_mt_acknowledgement.html"
+                            ><span class="icon">🤖</span></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <nav id="nav-desktop" aria-label="Main Navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">WP3 Home</a>
+                    </li>
+                    <li>
+                        <a href="site_map.html" aria-current="page">Site Map</a>
+                    </li>
+                    <li>
+                        <a href="style_guide.html">Style Guide</a>
+                    </li>
+                    <li>
+                        <a href="ethical_response.html">Ethical Response</a>
+                    </li>
+                    <li>
+                        <a href="genai_mt_acknowledgement.html"
+                            >GenAI and MT Acknowledgement</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Site Map</h1>
+                <p>
+                    <img
+                        src="assets/site-map.png"
+                        alt="Site map of the proposed website"
+                        class="responsive-img"
+                    />
+                </p>
+                <section class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">> About</button>
+                        <div class="accordion-content">
+                            <p>
+                                A welcome, an introduction to the community, and
+                                information on the purpose of the website.
+                            </p>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Q&A
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Aimed at the general public and
+                                            curious newcomers, it will contain
+                                            answers to common questions about
+                                            the community and the website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Terms of Use
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Information on the principals
+                                            underpining the website including
+                                            the commercial use policy and the
+                                            values of inclusion and tolerance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">> Stories</button>
+                        <div class="accordion-content">
+                            <p>
+                                A section devoted to stories from the community
+                                as a means of representation and expression of
+                                diversity.
+                            </p>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Personal Stories
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Biographies or personal accounts
+                                            related to the community.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> Story
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>The story itself.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Fan Fiction
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Fan Fiction submissions from the
+                                            community.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> Story
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>The story itself.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Historical Information
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Essays or articles with historical
+                                            context or themes.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> Story
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>The story itself.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Submit a Story
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            An upload form for people to submit
+                                            their story from any of the
+                                            aforementioned genres.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">> Resources</button>
+                        <div class="accordion-content">
+                            <p>
+                                A curated resource directory for all things
+                                model ship building.
+                            </p>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Kit Specific Guides
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A comprehensive collection of
+                                            downloadable pdf guides organised by
+                                            make and model.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> The guide.
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>
+                                                        Viewable online or
+                                                        downloadable.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> How to Guides for Common Techniques
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A curated collection of tutorials
+                                            (textual and video) for common model
+                                            ship building techniques.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> The guide
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>The guide.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> How to Guides for Common Mistakes
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A collection of guides for common
+                                            mistakes.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> The guide
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>The guide.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Tools and Materials Recommendations
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A curation of articles with advice
+                                            on tools, materials, and adaptions.
+                                        </p>
+                                        <div class="accordion-nested">
+                                            <div class="accordion-item">
+                                                <button
+                                                    class="accordion-header"
+                                                >
+                                                    >> The guide
+                                                </button>
+                                                <div class="accordion-content">
+                                                    <p>The guide.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">> Discussion</button>
+                        <div class="accordion-content">
+                            <p>The root page for the discussion boards.</p>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> User Build Logs
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A section where users can upload
+                                            build logs to show their progress
+                                            and receive comments and feedback.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Requests for Help or Advice
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A discussion boards where users can
+                                            anonymously request help or advice.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Beginner's Hub
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A place specifically for new
+                                            builders to connect with others like
+                                            them.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Events Listing
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            An events listing page where users
+                                            can post events.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> General Chat
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A discussion board where all can
+                                            meet and chat about all things model
+                                            boat building.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">> Contact</button>
+                        <div class="accordion-content">
+                            <p>A page containing contact details.</p>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Newsletter Signup Page
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A page for the newsletter signup form. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Create an Account
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            An account login page.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        >> Contact Us
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            A contact us form.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- Linking External JavaScript -->
+        <script type="module" src="js/site_map.js"></script>
+        <script type="module" src="js/index.js"></script>
+    </body>
 </html>

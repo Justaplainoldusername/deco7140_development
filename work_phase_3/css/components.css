@@ -1,29 +1,35 @@
+@import '../component_skeletons/accordion.css';                              
+
+
+
+
 /*---------------------
     NAVIGATION MENUS 
 -----------------------*/
-/* Responsive control for mobile */
-    #nav-mobile {
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-        background-color: var(--secondary-color);
-        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    }
 
-    #nav-desktop {
-        display: none;
-    }
+/* Responsive control for mobile */
+#nav-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#nav-desktop {
+    display: none;
+}
 
 /* Responsive control for tablets and computers */
 @media only screen and (min-width: 768px) {
     #nav-desktop {
-    display: block;
-    position: fixed;
-    z-index:1000;
-    top: 0;
-    width: 100vw;
-    background-color: var(--secondary-color);
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 100vw;
+        background-color: var(--secondary-color);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     }
 
     #nav-mobile {
@@ -41,45 +47,49 @@
     text-decoration: none;
 }
 
-#nav-desktop a::after{
-    content:"ꕀ";
+#nav-desktop a::after {
+    content: "ꕀ";
     color: aliceblue;
     opacity: 0%;
     vertical-align: text-bottom;
     transition: opacity 0.3s ease;
-        color: var(--background-color);
-
-
-
+    color: var(--background-color);
 }
 
 #nav-desktop a::before {
-    content:"ꕀ";
+    content: "ꕀ";
     color: aliceblue;
     opacity: 0%;
     vertical-align: text-bottom;
-
-        transition: opacity 0.3s ease;
-            color: var(--background-color);
-
-
+    transition: opacity 0.3s ease;
+    color: var(--background-color);
 }
 
 #nav-desktop a:hover {
-    color: var(--background-color)
+    color: var(--background-color);
 }
 
-#nav-desktop a:hover::after{
-    content:"ꕀ";
+#nav-desktop a:hover::after {
+    content: "ꕀ";
     color: var(--background-color);
     opacity: 70%;
     transition: opacity 1s ease;
 }
 
 #nav-desktop a:hover::before {
-    content:"ꕀ";
+    content: "ꕀ";
     color: var(--background-color);
     opacity: 70%;
     transition: opacity 1s ease;
 }
+
+/*----------------------
+    RESPONSIVE IMAGES
+------------------------*/
+
+.responsive-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}              
 
