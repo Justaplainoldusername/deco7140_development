@@ -83,6 +83,34 @@
     transition: opacity 1s ease;
 }
 
+/*--------------------
+    BREADCRUMB MENU
+----------------------*/
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumb {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 /*----------------------
     RESPONSIVE IMAGES
 ------------------------*/
@@ -92,4 +120,37 @@
     max-width: 100%;
     height: auto;
 }              
+
+
+/* -----------------
+    CONTENT CARDS
+--------------------*/
+
+/* Card container */
+.card-container {
+    display: flex;
+    flex-direction: column; /* mobile-first: stacked */
+    gap: 20px; /* space between cards */
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    height: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* subtle drop shadow */
+    flex: 1 1 100%; /* take full width on mobile */
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards across, accounting for gap */
+    }
+}
 
