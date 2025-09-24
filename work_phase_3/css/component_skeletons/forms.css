@@ -1,0 +1,81 @@
+/* -----------------
+   COMMUNITY FORM
+   Mobile-first styles
+-------------------- */
+
+/* General form styling */
+#community-form {
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+
+/* Labels */
+#community-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs & textarea */
+#community-form input[type="text"],
+#community-form input[type="email"],
+#community-form input[type="file"],
+#community-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Accessible focus states */
+#community-form input:focus,
+#community-form textarea:focus,
+#community-form button:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+  border-color: #005fcc;
+}
+
+/* Button */
+#community-form .btn {
+  margin-top: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  background: #005fcc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%; /* full-width button on mobile */
+}
+
+#community-form .btn:hover {
+  background: #004499;
+}
+
+/* -----------------
+   Desktop/tablet enhancements
+   Apply from 768px upwards
+-------------------- */
+@media (min-width: 768px) {
+  #community-form {
+    max-width: 480px; /* center on larger screens */
+    padding: 1.5rem;
+  }
+
+  #community-form .btn {
+    width: auto; /* shrink button to content size */
+    display: inline-block;
+  }
+}
