@@ -30,6 +30,7 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     flex: 1 1 100%;                /* full width on mobile */
     max-height: 24px;              /* touch-friendly */
+    max-width: 350px;
     text-decoration: none;
     color: var(--primary-color);
     font-family: "Inter", sans-serif;

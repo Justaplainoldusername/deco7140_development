@@ -1,2 +1,31 @@
 @import url("../component_skeletons/forms.css");
 @import url("../component_skeletons/navigation_cards.css");
+@import url("../component_skeletons/cards.css");
+
+.card-container {
+        flex-direction: row; /* mobile-first: stacked */
+
+}
+
+/* Mobile */
+.container-behavioural {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    background-color: #fff;
+}                                                        
+
+/* Larger Screens */
+@media (min-width: 768px) {
+    .container-behavioural {
+        flex-direction: row;
+        width: 70vw;
+        background-color: #fff;
+    }
+}
+
+.textbox {
+
+    flex-basis: 50%;
+    padding-right: 100px;
+}
