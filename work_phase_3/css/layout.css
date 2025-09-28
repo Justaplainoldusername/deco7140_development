@@ -13,7 +13,7 @@
     width: 90vw;
     margin: 0 auto;
     padding: 1rem;
-    background-color: var(--background-color);
+    background-color: #fff;
 }                                                        
 
 /* Larger Screens */
@@ -23,7 +23,7 @@
         margin-left: 15vw;
         margin-right: 15vw;
         padding: 20px;
-        background-color: var(--background-color);
+        background-color: #fff;
     }
 }
 

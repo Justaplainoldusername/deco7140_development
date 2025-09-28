@@ -7,8 +7,17 @@
     --accent-color: #a64d2d; /* Burnt Orange */
     --text-color: #99918b; /* Dark Grey */
     --box-color: #fffaf5; /* Light Beige */
-    --background-color: #F5F5F5; /*?ight Gregy */
+    --background-color: #F5F5F5; /*Light Grey */
 }
+
+/*----------
+    BODY
+------------*/
+
+.body {
+    background-color: var(--background-color);
+}
+
 
 /*---------------------------
     HEADINGS AND PARAGRAPH
@@ -113,4 +122,12 @@ nav ul {
 body {
     padding-top: 50px;
     background-color: var(--light-grey);
+}
+
+/*---------
+    A Tags
+-----------*/
+
+.a {
+  text-decoration: none;  
 }
