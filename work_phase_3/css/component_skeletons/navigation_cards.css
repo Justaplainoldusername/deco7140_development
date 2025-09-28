@@ -1,0 +1,102 @@
+/*-----------------------
+    NAVIGATION CARDS
+-------------------------*/
+
+/* Container for cards */
+.nav-container {
+    display: flex;
+    flex-direction: column;   /* stack vertically by default */
+    gap: 1rem;                /* spacing between cards */
+}
+
+/* On larger screens, display in a grid */
+@media (min-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* Individual cards/links */
+.nav-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 48px;
+    padding: 1rem 1.25rem;
+    padding-right: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    flex: 1 1 100%;                /* full width on mobile */
+    max-height: 24px;              /* touch-friendly */
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font
+    font-weight: 400;
+    transition: transform 0.15s ease, 
+                box-shadow 0.15s ease, 
+                background 0.15s ease,
+                border-color 0.15s ease;
+}
+
+.nav-card img {
+
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+
+.nav-card--primary {
+    border: 2px solid var(--secondary-color);
+}
+
+.nav-card--primary-reversed {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.nav-card--secondary {
+    border: 2px solid var(--accent-color);
+
+}
+
+.nav-card--secondary-reversed {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+
+.nav-card:hover,
+.nav-card:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    background: var(--box-color);
+    outline: none;
+}
+
+.nav-card--primary-reversed:hover,
+.nav-card--secondary-reversed:hover,
+.nav-card--primary-reversed:focus,
+.nav-card--secondary-reversed:focus {
+    background: var(--primary-color);
+}
+
+
+.nav-card:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+.nav-card:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}

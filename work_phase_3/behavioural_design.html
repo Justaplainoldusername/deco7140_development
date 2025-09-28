@@ -21,8 +21,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
+        />
         />
 
         <title>Behavioural Design</title>
@@ -82,7 +83,23 @@
                 <h2>Link Styles</h2>
                 <p>A little thing about links here.</p>
                 <h2>Menus and Navigation</h2>
+                <div class="nav-container">
+                    <a href="" class="nav-card nav-card--primary"
+                        ><span>Navigation Primary</span><img src="assets\navigation\nav-icon-light.png"></a>
+                    <a href="" class="nav-card nav-card--secondary"
+                        ><span>Navigation Secondary</span><img src="assets\navigation\nav-icon-red.png"></a>
+                        <a href="" class="nav-card nav-card--primary-reversed"
+                        ><span>Navigation Primary - Reversed</span><img src="assets\navigation\nav-icon-reversed.png"></a>
+                        <a href="" class="nav-card nav-card--secondary-reversed"
+                        ><span>Navigation Secondary - Reversed</span><img src="assets\navigation\nav-icon-reversed.png"></a>
+                </div>
                 <p>These things are good.</p>
+                <h2>Buttons</h2>
+                <p>We love buttons!</p>
+                <button class="article-btn">
+                    <span class="btn-text">Article Title</span>
+                    <span class="btn-icon" aria-hidden="true"></span>
+                </button>
                 <h2>Card Components</h2>
                 <p>I will definitely be using cards.</p>
                 <h2>Forms</h2>
@@ -104,11 +121,10 @@
                     <button type="submit" class="btn btn-primary">
                         Join the Community
                     </button>
-                                    <!-- Feedback message area -->
+                    <!-- Feedback message area -->
                     <p id="form-feedback" aria-live="polite"></p>
                 </form>
                 <!--OriginalForm-->
-
             </div>
         </main>
         <!-- Linking External JavaScript -->

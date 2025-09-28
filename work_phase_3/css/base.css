@@ -6,7 +6,8 @@
     --secondary-color: #557373; /* Medium Aqua */
     --accent-color: #a64d2d; /* Burnt Orange */
     --text-color: #99918b; /* Dark Grey */
-    --background-color: #fffaf5; /* Light Beige */
+    --box-color: #fffaf5; /* Light Beige */
+    --background-color: #F5F5F5; /*?ight Gregy */
 }
 
 /*---------------------------
@@ -55,7 +56,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Cinzel", serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-weight: medium;
     text-align: left;
@@ -69,7 +70,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--secondary-color);
     font-size: 1.2rem;
     font-weight: 600;
@@ -77,8 +78,8 @@ h3 {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
-    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    color: var(--primary-color);
     line-height: 115%;
 }
 
@@ -111,5 +112,5 @@ nav ul {
 
 body {
     padding-top: 50px;
-    background-color: var(--background-color);
+    background-color: var(--light-grey);
 }
