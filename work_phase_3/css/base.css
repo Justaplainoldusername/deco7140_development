@@ -41,11 +41,11 @@
 
 
 h1 {
-    font-family: "Cinzel", serif;
+    font-family: "Inter", sans-serif;
     font-size: 2.4rem;
     text-align: center;
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 200;
     padding-bottom: 1rem;
 }
 
@@ -58,7 +58,7 @@ h1 {
 h2 {
     font-family: "Inter", sans-serif;
     font-size: 1.6rem;
-    font-weight: medium;
+    font-weight: 200;
     text-align: left;
     color: var(--secondary-color);
     padding-bottom: 0.5rem;
@@ -73,7 +73,7 @@ h3 {
     font-family: "Inter", sans-serif;
     color: var(--secondary-color);
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
     padding-bottom: 0.5rem;
 }
 

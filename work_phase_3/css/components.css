@@ -83,6 +83,20 @@
     transition: opacity 1s ease;
 }
 
+/*---------------------
+    BANNER 
+-----------------------*/
+.banner {
+    width: 100%
+    overflow: hidden;
+}
+
+.banner-image {
+    display:block;
+    width: 100%;
+    height: 485px;
+
+}
 
 /*--------------------
     BREADCRUMB MENU
