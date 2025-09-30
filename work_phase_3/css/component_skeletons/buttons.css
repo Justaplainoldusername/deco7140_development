@@ -1,8 +1,4 @@
-button:focus {
-  outline: 3px solid #005fcc;
-  outline-offset: 2px;
-  border-color: #005fcc;
-}
+
 
 /* Button */
 button {
@@ -21,3 +17,11 @@ button {
 button:hover {
   background: var(--primary-color);
 }
+
+button:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+
+

@@ -104,29 +104,31 @@
 ----------------------*/
 
 ul.breadcrumb {
+    display: inline;
     padding: 10px 16px;
-    list-style: none;
+    list-style: none; 
+    font-size: 18px;
 }
 
-ul.breadcrumb {
-    display: inline;
-    font-size: 18px;
+li {
+    float: left;
 }
 
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: black;
+  color: var(--primary-color);
   content: "/\00a0";
 }
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 ul.breadcrumb li a:hover {
-  color: #01447e;
+  color: var(--accent-color);
   text-decoration: underline;
 }
+
 /*----------------------
     RESPONSIVE IMAGES
 ------------------------*/

@@ -86,6 +86,7 @@
 .nav-card--primary-reversed:focus,
 .nav-card--secondary-reversed:focus {
     background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 

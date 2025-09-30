@@ -132,10 +132,30 @@ body {
     background-color: var(--light-grey);
 }
 
-/*---------
-    A Tags
------------*/
+/*----------------
+    Hyperlinks
+----------------*/
 
-.a {
-  text-decoration: none;  
+.textlink {
+  color: var(--primary-color);
+    text-decoration: underline;
+
+  transition: color 0.2s ease, transform 0.2s ease;
 }
+
+.textlink:hover,
+.textlink:focus {
+font-weight: bold;
+text-decoration: none;  
+
+color: var(--accent-color);
+
+}
+
+.textlink:active {
+  transform: translateY(0); /* reset on click */
+      border-color: var(--accent-color);
+
+  color: var(--accent-color)
+}
+
