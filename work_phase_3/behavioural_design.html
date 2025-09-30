@@ -85,14 +85,14 @@
                 />
             </div>
             <div class="container" >
-                <h1>Behavioural Design</h1>
+                <div class="page-title">Behavioural Design</div>
                 <h2>Link Styles</h2>
                 <div class="container-behavioural">
                     
-                    <span class="textbox">
-                    <p>During Work Phase 2, we uncovered a user preference for mouse-free navigation. To support this, we have provided a link style that advertises its...The button-like compass image invites users to click there, however for ease of use the entire...has been converted into a hyperlink</p>
+                    <span class="textbox-left">
+                    <p>During Work Phase 2, we uncovered a user preference for mouse-free navigation. To support this, we have developed a link style that advertises its clickability through features such as a drop shadow which imitates a 3d button in real life, hover effects that indicate interactabilty, and the button-like icon of a stylised compass that symbolises navigation. While the icon appears to be the click target, the entire field has been activated as a link to increase the usability of this component. Four variations have been provided to maximise the versatility of this feature. </p>
                     </span>
-                    <span>
+                    <span class="textbox-right">
                         <div class="nav-container">
                             <a href="" class="nav-card nav-card--primary"
                                 ><span>Navigation Primary</span
@@ -122,24 +122,37 @@
                 </div>
                 <h2>Buttons</h2>
                 <div class="container-behavioural">
-                                <span class="textbox"><p>We love buttons!</p></span>
+                                <span class="textbox-left"><p>We love buttons!</p></span>
 
-                    <span class="textbox">  <button class="article-btn">
-                    <span class="btn-text">Article Title</span>
+                    <span class="textbox-right">  <button class="article-btn">
+                    <span class="btn-text">Subscribe</span>
                     <span class="btn-icon" aria-hidden="true"></span>
                 </button></span>
                 </div>
-
-
-                
-                
-              
-                <h2>Card Components</h2>
-                <p>I will definitely be using cards.</p>
-                <h2>Forms</h2>
-                <p>Here is a form I prepared earlier.</p>
-                <!--CHATGPT tidied Form-->
-                <form id="community-form" enctype="multipart/form-data">
+<h2>Card Components</h2>
+<div class="container-behavioural">
+    <span class="textbox-left"><p>I will definitely be using cards.</p>
+    </span>
+    <span class="textbox-right">
+        <div class="card-container">
+                <span class="card">
+                    <img src="assets/navigation/nav-icon-light-reversed.png" alt="card-image"></img>
+                    <span><h3>Visceral</h3></span>
+                <p>Tapping into the unconcious to ensure your website feels right.</p>
+                </span>
+                <span class="card">
+                <img src="assets/navigation/nav-icon-dark-reversed.png" alt="card-image"></img>
+                    <span><h3>Behavioural</h3></span>
+                <p>Design approaches to ensure your website is easy to use.</p>
+                </span>
+        </div>
+    </span>
+</div>
+<h2>Forms</h2>
+<div class="container-behavioural">
+    <span class="textbox-left">
+    <p>There will be several forms included in the website including the Newsletter Signup Form that was stipulated in the intial brief, a Contact form, and a Signup form so that users can engage with the website's forums and discussions.</p></span>
+    <span class="textbox-right">                <form id="community-form" enctype="multipart/form-data">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" required />
 
@@ -157,8 +170,17 @@
                     </button>
                     <!-- Feedback message area -->
                     <p id="form-feedback" aria-live="polite"></p>
-                </form>
-                <!--OriginalForm-->
+                </form></span>
+</div>
+                
+                
+              
+                
+                
+                
+
+                <!--CHATGPT tidied Form-->
+
             </div>
         </main>
         <!-- Linking External JavaScript -->

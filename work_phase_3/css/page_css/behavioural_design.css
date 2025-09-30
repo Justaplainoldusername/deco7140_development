@@ -26,8 +26,19 @@
     }
 }
 
-.textbox {
+.textbox-left {
 
-    flex-basis: 50%;
-    padding-right: 100px;
+    flex-basis: 150%;
+    padding-right: 50px;
+    border-style: solid;
+    border: right #000;
+
+}
+
+.textbox-right {
+    flex-basis: 150%;
+    padding-left: 50px;
+    border-style: solid;
+    border: right #000;
+    border-left-width:1px;
 }
