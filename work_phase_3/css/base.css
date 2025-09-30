@@ -31,6 +31,8 @@
     color: var(--primary-color);
     font-weight: 500;
     padding-bottom: 1rem;
+        padding-top: 1rem;
+
 
 }
 
@@ -38,7 +40,6 @@
     line-height: 1.5;
     content:"\A⚓︎";
     white-space: pre;
-
 
 }
 }
@@ -48,34 +49,37 @@
 }
 }
 
-
 h1 {
     font-family: "Inter", sans-serif;
-    font-size: 2.4rem;
-    text-align: center;
-    color: var(--primary-color);
-    font-weight: 200;
-    padding-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: left;
+    color: var(--secondary-color);
+        padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) { h1 {
         font-size: 2.8rem;
-        text-align: left;
+        text-align: left;}
 }
-}
+
 
 h2 {
     font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-weight: 200;
     text-align: left;
-    color: var(--secondary-color);
-    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+
+        padding-top: 1rem;
+
     
 }
 
 @media (min-width: 768px) { h2 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         text-align: left;}
 }
 
@@ -84,6 +88,8 @@ h3 {
     color: var(--secondary-color);
     font-size: 1.2rem;
     font-weight: 400;
+        padding-top: 1rem;
+
     padding-bottom: 0.5rem;
 }
 
@@ -92,6 +98,8 @@ p {
     font-size: 1rem;
     color: var(--primary-color);
     line-height: 115%;
+        padding-top: 1rem;
+
     padding-bottom: 1rem;
 }
 
@@ -128,7 +136,6 @@ nav ul {
 -----------*/
 
 body {
-    padding-top: 50px;
     background-color: var(--light-grey);
 }
 

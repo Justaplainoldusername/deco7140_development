@@ -84,19 +84,28 @@
                     class="banner-image"
                 />
             </div>
-        
+            <!--Breadcrumb Menu-->
             <div class="container" >
                                 <ul class="breadcrumb">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./style_guide.html">Style Guide</a></li>
                 </ul>
                 <div class="page-title">Behavioural Design</div>
-                <h2>Link Styles</h2>
+
+                <h2>Navigation Styles</h2>
+                <div class="container-behavioural">
+                    <span class="textbox-left">
+                        <h3>Navigation Menu</h3>
+                    </span>
+                    <span class="textbox-left">
+                    </span>
+                </div>
                 <div class="container-behavioural">
                     
                     <span class="textbox-left">
+                    <h3>Content Navigation</h3>
                     <p>During Work Phase 2, we uncovered a user preference for mouse-free navigation. To support this, we have developed a link style that advertises its clickability through features such as a drop shadow which imitates a 3d button in real life, hover effects that indicate interactabilty, and the button-like icon of a stylised compass that symbolises navigation. While the icon appears to be the click target, the entire field has been activated as a link to increase the usability of this component. Four variations have been provided to maximise the versatility of this feature. </p>
-                    <p>At times it may be necessary to provide text links that do not impact on the readability of the surrounding text. For this we have employed some simple styling that draws upon design conventions: an underline to indicate clickability, and colour, underline and font-weight changes on hover.</p>
+
                     </span>
                     <span class="textbox-right">
                         <div class="nav-container">
@@ -123,37 +132,65 @@
                                 ><img
                                     src="assets\navigation\nav-icon-reversed.png"
                             /></a>
-                            <p>Example of a <a href="" class="textlink">text link</a>.</p>
+
                         </div>
                     </span>
                 </div>
+                <div class="container-behavioural">
+                    <span class="textbox-left">                 <h3>Text Navigation</h3>   
+                        <p>At times it may be necessary to provide navigation links within paragraphs that do not impact on the readability of the surrounding text. For this we have employed some simple styling that draws upon design conventions: an underline to indicate clickability, and colour, underline and font-weight changes on hover.</p></span>
+                    <span class="textbox-right">                            <p>Example of a <a href="" class="textlink">text link</a> for navigation from within a paragraph of text.</p></span>
+                </div>
+            <div class="container-behavioural">
+                <span class="textbox-left">
+                    <h3>Breadcrumb Menu</h3><p>While our intention will always be to make the website structure as flat as possible, on occasion users may need to navigate more than two layers deep to accees their desired resources. To assist, we will include a simple breadcrumb menu in a familiar style that will assist users' navigation.</p>
+                </span>
+                <span class="textbox-right">
+                                        <ul class="breadcrumb">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">"Trouble in Pitcairn"</a></li>
+
+                </ul>
+                </span>
+            </div>
                 <h2>Buttons</h2>
                 <div class="container-behavioural">
-                                <span class="textbox-left"><p>We love buttons!</p></span>
+                                <span class="textbox-left"><p>Rather than reusing the styling of the button-like navigation style above, we have defined a similiar but unique style to differentiate from buttons that go somewhere (navigation) and buttons that do something (such as "login" or "submit"). These will be used in forms, and where simpler, tighter styling is required. </p></span>
 
-                    <span class="textbox-right">  <button class="article-btn">
-                    <span class="btn-text">Subscribe</span>
-                    <span class="btn-icon" aria-hidden="true"></span>
-                </button></span>
+                    <span class="textbox-right">  <button>
+                    <span>Subscribe</span>
+                </button>
+            <button class="button-red">
+                    <span>Subscribe</span>
+            </button>
+            </span>
                 </div>
-<h2>Card Components</h2>
+<h2>Cards</h2>
 <div class="container-behavioural">
-    <span class="textbox-left"><p>I will definitely be using cards.</p>
+    <span class="textbox-left"><p>The cards have been designed to be visually pleasing, single topic content holders that will promote and link to featured articles and stories within the site.</p>
+        <p>Again, we have designed with mouse-free navigation in mind. The large area makes the card pleasingly clickable by mouse, digit, stylus, or any other such tool. Microinteractions, colour changes and design changes on hover and focus improve accessibility of the component.</p>
+        <p>Using images in the card provides an opportunity to either enhance the emotional connection with the content (great for Stories) or allows for easier navigation to specific resources by including images of the featured build or tool (great for Resource pages)</p>
     </span>
     <span class="textbox-right">
         <div class="card-container">
-                <span class="card">
-                    <img src="assets/navigation/nav-icon-light-reversed.png" alt="card-image"></img>
-                    <span><h3>Visceral</h3></span>
-                <p>Tapping into the unconcious to ensure your website feels right.</p>
-                </span>
-                <span class="card">
-                <img src="assets/navigation/nav-icon-dark-reversed.png" alt="card-image"></img>
-                    <span><h3>Behavioural</h3></span>
-                <p>Design approaches to ensure your website is easy to use.</p>
-                </span>
+                <a href="" class="card">
+                    <img src="assets/banners/banner_home.png" alt="card-image"></img>
+                    <span><h3>"Trouble in Pitcairn"</h3></span>
+                <p>When the Bounty mutineers make land, new challenges await the sailors.</p>
+                </a>
+                <a href="" class="card">
+                <img src="assets/card_images/Occre-Albatross.png" alt="card-image"></img>
+                    <span><h3>Occre - Abatross</h3></span>
+                <p>Resources and build guides to help you complete this beginner's kit.</p>
+                </a>
         </div>
     </span>
+</div>
+<h2>Icons</h2>
+<div class="container-behavioural">
+    <span class="textbox-left"><p>Meaningful icons can be an excellent replacement to text, simplifying design and improving accessibility.Throughout the website we will employ icons in place of text where space is restricted, or where usability and design will be improved as a result.</p><p> Our community of boat builders will likely be familiar with many common and lesser known symbols and icons that we could use to enhance reflective design within the site. However, to maximise inclusivity, we have opted to adhere to symbols and iconography that the general public is familiar with or will find intuitive. Examples of this include a magnifying glass to denote a search field.</p><p><a href="https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Magnifying glass icons created by Muhammad_Usman - Flaticon</a></p></span>
+    <span class="textbox-right"><p><img class="icon" src="assets/icons/search.png"></img></p></span>
 </div>
 <h2>Forms</h2>
 <div class="container-behavioural">
@@ -172,7 +209,7 @@
                     <label for="photo">Upload photo (max 10MB)</label>
                     <input type="file" id="photo" name="photo" />
 
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit">
                         Join the Community
                     </button>
                     <!-- Feedback message area -->

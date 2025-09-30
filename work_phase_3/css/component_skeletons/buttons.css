@@ -3,25 +3,32 @@
 /* Button */
 button {
   margin-top: 1.25rem;
-  padding: 0.75rem 0.25rem;
+  padding: 0.75rem 1.25rem;
   background: var(--secondary-color);
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  width: 100%; /* full-width button on mobile */
+  width: auto; /* full-width button on mobile */
+}
+
+.button-red {
+background: var(--accent-color);
 }
 
 button:hover {
   background: var(--primary-color);
+      transform: translateY(-2px);
+
 }
 
 button:focus {
   outline: 3px solid var(--accent-color);
   outline-offset: 2px;
-}
+      transform: translateY(-2px);
 
+}
 
 

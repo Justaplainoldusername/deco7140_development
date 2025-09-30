@@ -1,9 +1,7 @@
-/* -----------------
-    COMMUNITY FORM
-    Mobile-first styles
--------------------- */
+/*--------------
+      FORMS
+----------------*/
 
-/* General form styling */
 #community-form {
   width: 100%;
   max-width: 100%;
@@ -15,8 +13,6 @@
   font-family: system-ui, sans-serif;
   color: #222;
 }
-
-/* Labels */
 #community-form label {
   display: block;
   font-weight: 600;
@@ -24,7 +20,6 @@
   margin-bottom: 0.25rem;
 }
 
-/* Inputs & textarea */
 #community-form input[type="text"],
 #community-form input[type="email"],
 #community-form input[type="file"],
@@ -37,45 +32,16 @@
   line-height: 1.4;
 }
 
-/* Accessible focus states */
 #community-form input:focus,
-#community-form textarea:focus,
-#community-form button:focus {
+#community-form textarea:focus {
   outline: 3px solid #005fcc;
   outline-offset: 2px;
   border-color: #005fcc;
 }
 
-/* Button */
-#community-form .btn {
-  margin-top: 1.25rem;
-  padding: 0.75rem 1.25rem;
-  background: var(--secondary-color);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  width: 100%; /* full-width button on mobile */
-}
-
-#community-form .btn:hover {
-  background: var();
-}
-
-/* -----------------
-    Desktop/tablet enhancements
-    Apply from 768px upwards
--------------------- */
 @media (min-width: 768px) {
   #community-form {
-    max-width: 480px; /* center on larger screens */
+    max-width: 480px; 
     padding: 1.5rem;
-  }
-
-  #community-form .btn {
-    width: auto; /* shrink button to content size */
-    display: inline-block;
   }
 }
