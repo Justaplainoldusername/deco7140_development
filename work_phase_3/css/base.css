@@ -6,7 +6,7 @@
     --secondary-color: #557373; /* Medium Aqua */
     --accent-color: #a64d2d; /* Burnt Orange */
     --text-color: #99918b; /* Dark Grey */
-    --box-color: #fffaf5; /* Light Beige */
+    --box-color: #ffeddc; /* Light Beige */
     --background-color: #F5F5F5; /*Light Grey */
 }
 
@@ -95,14 +95,18 @@ h3 {
 
 p {
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--primary-color);
     line-height: 115%;
         padding-top: 1rem;
 
     padding-bottom: 1rem;
 }
+@media (min-width: 768px) { p {
+        font-size: 1.2rem;
+        text-align: left;}
 
+}
 ul {
     padding-bottom: 1rem;
 }
