@@ -27,7 +27,7 @@
     border-radius: 48px;
     padding: 1rem 1.25rem;
     padding-right: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px var(--text-color); /* subtle drop shadow */
     flex: 1 1 100%;                /* full width on mobile */
     max-height: 24px;              /* touch-friendly */
     max-width: 350px;

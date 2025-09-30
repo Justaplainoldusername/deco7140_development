@@ -71,10 +71,11 @@ h2 {
     text-align: left;
     color: var(--secondary-color);
     padding-bottom: 0.5rem;
+    
 }
 
 @media (min-width: 768px) { h2 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         text-align: left;}
 }
 
@@ -88,11 +89,18 @@ h3 {
 
 p {
     font-family: "Inter", sans-serif;
+    font-size: 1rem;
     color: var(--primary-color);
     line-height: 115%;
+    padding-bottom: 1rem;
 }
 
+ul {
+    padding-bottom: 1rem;
+}
 
+li {
+}
 /*---------------------
     NAVIGATION MENUS   
 -----------------------*/

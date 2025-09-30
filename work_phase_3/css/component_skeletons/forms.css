@@ -1,6 +1,6 @@
 /* -----------------
-   COMMUNITY FORM
-   Mobile-first styles
+    COMMUNITY FORM
+    Mobile-first styles
 -------------------- */
 
 /* General form styling */
@@ -50,7 +50,7 @@
 #community-form .btn {
   margin-top: 1.25rem;
   padding: 0.75rem 1.25rem;
-  background: #005fcc;
+  background: var(--secondary-color);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -61,12 +61,12 @@
 }
 
 #community-form .btn:hover {
-  background: #004499;
+  background: var();
 }
 
 /* -----------------
-   Desktop/tablet enhancements
-   Apply from 768px upwards
+    Desktop/tablet enhancements
+    Apply from 768px upwards
 -------------------- */
 @media (min-width: 768px) {
   #community-form {

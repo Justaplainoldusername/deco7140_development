@@ -1,0 +1,23 @@
+button:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+  border-color: #005fcc;
+}
+
+/* Button */
+button {
+  margin-top: 1.25rem;
+  padding: 0.75rem 0.25rem;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%; /* full-width button on mobile */
+}
+
+button:hover {
+  background: var(--primary-color);
+}

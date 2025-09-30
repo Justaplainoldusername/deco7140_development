@@ -1,6 +1,8 @@
 @import url("../component_skeletons/forms.css");
 @import url("../component_skeletons/navigation_cards.css");
 @import url("../component_skeletons/cards.css");
+@import url("../component_skeletons/buttons.css");
+
 
 .card-container {
         flex-direction: row; /* mobile-first: stacked */
