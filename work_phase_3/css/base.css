@@ -111,12 +111,16 @@ ul {
 
 li {
 }
+
+
 /*---------------------
     NAVIGATION MENUS   
 -----------------------*/
 /* Base styles */
 nav ul {
     display: flex;
+        z-index: 3;
+
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
@@ -130,6 +134,7 @@ nav ul {
     padding: 1rem 0;
     font-size: 1.5rem;
     text-decoration: none;
+    z-index: 1;
 
 }
 
