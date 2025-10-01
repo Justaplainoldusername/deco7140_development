@@ -4,9 +4,10 @@
 /* Base Highlight Style */
 .interactive-highlight {
     position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
-    background-color: rgba(255,237,220,0.5);
     cursor: pointer; /* Changes cursor to indicate interactivity */
-    padding: 2px 5px; /* Adds small space inside the highlight for better readability */
+    padding: 1px 3px; /* Adds small space inside the highlight for better readability */
+    border-style: solid;
+    border-width: 1px;
     border-radius: 5px; /* Rounds the corners slightly for a softer look */
     transition: background 0.3s ease; /* Smooth transition effect when background changes */
 }
@@ -33,6 +34,7 @@
     background: var(--box-color);
     color: var(--primary-color);
     font-size: 0.7rem;
+    line-height: 1.25;
     padding: 1rem;
     width: 150px; /* Sets a fixed width for the tooltip */
     height: auto; /* Sets a fixed height, making the tooltip a perfect circle */
@@ -78,35 +80,5 @@
 .interactive-highlight-stories:active::after {
     opacity: 1;
 }
-/* Tooltip Styling for Highlighted Text */
-.interactive-highlight-stories::after {
-    content: attr(user-card); /* See the explanation */
-    position: absolute; /* Positions the tooltip relative to the highlighted text */
-    top: -5px; /* Moves the tooltip slightly above the highlighted text */
-    right: -15px; /* Moves the tooltip slightly to the right of the highlighted text */
-    background: var(--secondary-color);
-    color: white;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 1rem;
-    width: 20rem; /* auto-fits tooltip to content length*/
-    height: fit-content; /* Sets height to 40px*/
-    display: flex; /* Uses Flexbox to center the text inside the circle */
-    align-items: center; /* Vertically centers the text inside the tooltip */
-    justify-content: center; /* Horizontally centers the text inside the tooltip */
-    border-radius: 10%; /* Creates rounded corners */
-    opacity: 0; /* Initially hides the tooltip */
-    transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
-}
 
-/* Value Box and User Story Box */
-.value-box,
-.user-story-box, .success-criterion {
-    border: 2px solid var(--primary-color); /* Bright Blue border */
-    border-radius: 8px;
-    padding: 1rem 1.2rem;
-    margin-bottom: 1rem;
-    background: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+
