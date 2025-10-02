@@ -7,7 +7,6 @@
     NAVIGATION MENUS 
 -----------------------*/
 
-/* Responsive control for mobile */
 #nav-mobile {
     position: fixed;
     bottom: 0;
@@ -20,7 +19,6 @@
     display: none;
 }
 
-/* Responsive control for tablets and computers */
 @media only screen and (min-width: 768px) {
     #nav-desktop {
         display: block;
@@ -92,15 +90,19 @@
 }
 
 /* Responsive banner image */
+
 .banner-image {
     display: block;
     width: 100%;
-    height: auto; /* keeps aspect ratio */
-    max-height: 485px; /* optional: limit banner height */
+    height: 200px; /* optional: limit banner height */
     object-fit: cover; /* ensures image fills space without distortion */
 }
 
+@media (min-width: 768px) { .banner-image {
+    height: 485px; /* optional: limit banner height */
+}
 
+}
 /*--------------------
     BREADCRUMB MENU
 ----------------------*/
@@ -145,7 +147,7 @@ ul.breadcrumb li a:hover {
 
 
 
-/*
+/*-----------------
     HIGHLIGHT BOX
 -------------------*/
 
@@ -153,10 +155,11 @@ ul.breadcrumb li a:hover {
 .highlight-box {
     height: auto;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem 4rem;
     background-color: var(--box-color);
     border-radius: 10px;
     box-shadow: 0px 0px 3px 5px var(--box-color);
+    text-align: center;
 
 }                                                        
 

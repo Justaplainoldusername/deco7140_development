@@ -20,6 +20,7 @@
     padding: 1rem;
     box-shadow: 0 2px 6px var(--text-color); /* subtle drop shadow */
     flex: 1 1 100%; /* take full width on mobile */
+    line-height: 0;
 }
 
 .card img {
@@ -38,12 +39,6 @@
   outline-offset: 2px;
 }
 
-
-
-
-.card-text {
-
-}
 
 /* Larger Screens */
 @media (min-width: 768px) {
