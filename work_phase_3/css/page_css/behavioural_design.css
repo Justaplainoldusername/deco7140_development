@@ -70,3 +70,8 @@
     border-left-width:1px;
 }    
 }
+
+.card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
