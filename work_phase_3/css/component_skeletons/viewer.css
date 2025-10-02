@@ -45,13 +45,9 @@
     }
 
     .viewer.open {
-        position: absolute;
-        top: 10%;
-        left: 25%;
+        position: fixed;
+        top: 15%;
+        left: 50%;
     }
 }                                                  
 
-@media (min-width: 768px) {
-
-    
-}

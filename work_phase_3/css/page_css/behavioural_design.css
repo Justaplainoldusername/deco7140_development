@@ -2,74 +2,8 @@
 @import url("../component_skeletons/navigation_cards.css");
 @import url("../component_skeletons/cards.css");
 @import url("../component_skeletons/buttons.css");
+@import url("../component_skeletons/style_guide_layout.css");
 
-
-
-
-/* Mobile */
-.container-behavioural {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    background-color: #fff;
-    padding-bottom: 2rem;
-
-}                                                        
-
-/* Larger Screens */
-@media (min-width: 768px) {
-    .container-behavioural {
-        flex-direction: row;
-        width: 70vw;
-        background-color: #fff;
-    }
-}
-
-
-.textbox-left {
-
-    flex-basis: 150%;
-    border-style: solid;
-    border: right #000;
-
-}
-
-@media (min-width: 768px){
-    .textbox-left {
-
-    flex-basis: 150%;
-    padding-right: 50px;
-    border-style: solid;
-    border: right #000;
-    }
-}
-
-.textbox-right {
-      display: flex;
-      flex-direction: column;
-    flex-basis: 150%;
-    padding-left: 1rem;
-  justify-content: center;
-  align-items: center;
-
-    border-style: solid;
-    border: right #000;
-    border-left-width:1px;
-    
-}
-
-@media (min-width: 768px) {.textbox-right {
-      display: flex;
-      flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    flex-basis: 150%;
-    padding-left: 50px;
-    border-style: solid;
-    border: right #000;
-    border-left-width:1px;
-}    
-}
 
 .card-container {
     flex-direction: row;

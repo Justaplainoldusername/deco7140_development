@@ -51,37 +51,41 @@
 
 h1 {
     font-family: "Inter", sans-serif;
-    font-size: 2.2rem;
-    font-weight: 300;
-    text-align: left;
-    color: var(--secondary-color);
-        padding-top: 1rem;
-    padding-bottom: 0.5rem;
-}
-
-@media (min-width: 768px) { h1 {
-        font-size: 2.8rem;
-        text-align: left;}
-}
-
-
-h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 200;
     text-align: left;
     color: var(--primary-color);
     padding-bottom: 1rem;
 
         padding-top: 1rem;
+}
 
-    
+@media (min-width: 768px) { h1 {
+        font-size: 2.4rem;
+        text-align: left;}
+}
+
+
+
+
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: left;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+
+        padding-top: 1rem;
+        line-height: 1.3;
 }
 
 @media (min-width: 768px) { h2 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         text-align: left;}
 }
+
 
 h3 {
     font-family: "Inter", sans-serif;
