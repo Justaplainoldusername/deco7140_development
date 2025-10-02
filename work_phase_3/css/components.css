@@ -156,9 +156,8 @@ ul.breadcrumb li a:hover {
     height: auto;
     margin: 0 auto;
     padding: 2rem 4rem;
-    background-color: var(--box-color);
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 5px var(--box-color);
+    box-shadow: 0px 0px 5px 7px var(--secondary-color);
     text-align: center;
 
 }                                                        
