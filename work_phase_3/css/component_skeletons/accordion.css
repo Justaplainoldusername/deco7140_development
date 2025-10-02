@@ -10,31 +10,31 @@
     margin-left: 1rem;
     border-left: 0px solid black;
     padding-left: 1rem;
-        padding: 5px;
+    padding: 5px;
 
 }
 
 .accordion-item {
     border-style: solid;
-    border-width: 0px;
-    border-radius: 8px;
+    border-width: 2px 0px 0px 1px;
+    border-radius: 8px 8px 0px 0px;
     border-color: var(--secondary-color);
     overflow: hidden;
     transition: all 0.3s ease;
+    
 }
 
 .accordion-header {
     padding: 1rem;
     font-family: "Inter", sans-serif;
-    color: white;
+    color: var(--primary-color);
     font-size: 1rem;
-    border-width: 5px;
-    background-color: var(--secondary-color);
+    /*border-width: 5px;
+    /*background-color: var(--secondary-color);*/
     width: 100%;
     text-align: left;
     border: none;
     cursor: pointer;
-    content: >
 }
 
 .accordion-content {
@@ -52,15 +52,14 @@
 }
 
 .accordion-nested .accordion-header {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     color: white;
-    border: 1px solid var(--accent-color);
-    border-radius: 10px 10px 0 0;
+    border: 0px solid var(--accent-color);
+    border-radius: 5px 5px 0 0;
 }
 
 .accordion-nested .accordion-content {
     color: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    border: 0px solid var(--accent-color);
     border-radius: 0 0 10px 10px;
 }
-

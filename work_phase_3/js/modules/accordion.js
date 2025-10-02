@@ -6,7 +6,8 @@ function initAccordion (containerSelector) {
 
         headers.forEach((header) => {
             header.addEventListener("click", () => {
-                const item = header.parentElement; // Get the parent of the header - the accordion-item
+                //const item = header.parentElement; // Get the parent of the header - the accordion-item
+                const item = header.closest(".accordion-item");
                 item.classList.toggle("open"); // Adds or removes the open class to the accordion-item
             });
         });
