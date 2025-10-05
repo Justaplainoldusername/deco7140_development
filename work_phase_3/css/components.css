@@ -114,7 +114,7 @@ ul.breadcrumb {
     font-size: 18px;
 }
 
-li {
+li.breadcrumb {
     float: left;
     font-family: Inter, sans-serif;
     font-size: 12px;
