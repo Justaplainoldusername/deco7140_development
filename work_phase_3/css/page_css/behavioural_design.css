@@ -3,6 +3,7 @@
 @import url("../component_skeletons/cards.css");
 @import url("../component_skeletons/buttons.css");
 @import url("../component_skeletons/style_guide_layout.css");
+@import url("../component_skeletons/interactive_highlight.css");
 
 
 .card-container {
