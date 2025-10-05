@@ -151,7 +151,7 @@ body {
 }
 
 /*----------------
-    Hyperlinks
+    HYPERLINKS
 ----------------*/
 
 .textlink {
@@ -177,3 +177,19 @@ color: var(--accent-color);
   color: var(--accent-color)
 }
 
+/*-----------
+    IMAGES
+-------------*/
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+
+}
+
+.img-fluid-45 {
+    max-width: 40%;
+    height: auto;
+    padding: 1rem;
+}

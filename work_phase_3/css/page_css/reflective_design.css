@@ -1,0 +1,54 @@
+@import url("../component_skeletons/forms.css");
+@import url("../component_skeletons/navigation_cards.css");
+@import url("../component_skeletons/cards.css");
+@import url("../component_skeletons/buttons.css");
+@import url("../component_skeletons/style_guide_layout.css");
+@import url("../component_skeletons/interactive_highlight.css");
+
+.textbox-right {
+      display: flex;
+      flex-direction: row;
+        flex-wrap: wrap;
+
+    flex-basis: 150%;
+    padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+
+    border-style: solid;
+    border: right #000;
+    border-left-width:1px;
+    
+}
+
+@media (min-width: 768px) {.textbox-right {
+    border-left-width:1px;
+        padding-left: 1rem;
+
+}    
+}
+
+.card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.not-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 14px;
+    height: 280px;
+    max-width: 230px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px var(--text-color); /* subtle drop shadow */
+    flex: 1 1 100%; /* take full width on mobile */
+    line-height: 0;
+}
+
+.not-card img {
+    height:150px; 
+    object-fit: contain;
+    flex-shrink: 0;
+    padding-bottom: 1rem;
+}
