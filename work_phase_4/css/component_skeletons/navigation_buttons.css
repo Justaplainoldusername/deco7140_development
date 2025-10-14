@@ -1,0 +1,85 @@
+/*-----NAVIGATION BUTTONS------*/
+
+/* Individual buttons/links */
+.nav-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 48px;
+    padding: 1rem 1.25rem;
+    padding-right: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px var(--text-color); /* subtle drop shadow */
+    flex: 1 1 100%;                /* full width on mobile */
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: transform 0.15s ease, 
+                box-shadow 0.15s ease, 
+                border-color 0.15s ease;
+}
+
+.nav-button img {
+
+    height: 0px;
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+
+.nav-button--primary {
+    border: 2px solid var(--secondary-color);
+}
+
+.nav-button--primary-reversed {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.nav-button--secondary {
+    border: 2px solid var(--accent-color);
+
+}
+
+.nav-button--secondary-reversed {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+
+.nav-button:hover,
+.nav-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    background: var(--box-color);
+    outline: none;
+}
+
+.nav-button--primary-reversed:hover,
+.nav-button--secondary-reversed:hover,
+.nav-button--primary-reversed:focus,
+.nav-button--secondary-reversed:focus {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+.nav-button:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+.nav-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}

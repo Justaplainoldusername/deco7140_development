@@ -3,19 +3,108 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS Linking -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/page_css/index.css" <!-- Favicon -- />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
         <title>Work Phase 4</title>
     </head>
+
     <body>
         <header>
-            <h1>Work Phase 4</h1>
-        </header>
-        <section>
-            <h2>What's here?</h2>
-            <p>This is the page for work phase 4.</p>
-        </section>
-        <section>
-            <h2>Links</h2>
-            <a href="../index.html">Home</a>
-        </section>
+            <!-- Mobile Navigation-->
+            <nav class="top-nav" role="navigation" aria-label="Primary">
+                <div class="nav-inner">
+                    <div class="logo">Site Title</div>
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+                    <div class="nav-item" id="nav-menu">
+                        <details>
+                            <summary>Resources</summary>
+                            <ul class="dropdown" role="menu" aria-label="Products submenu">
+                                <li role="menuitem">Kit Specific Guides</li>
+                                <li role="menuitem">Common Techniques and Mistakes</li>
+                                <li role="menuitem">Tools and Materials</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Stories</summary>
+                            <ul class="dropdown" role="menu" aria-label="Products submenu">
+                                <li role="menuitem">Personal Stories</li>
+                                <li role="menuitem">Fiction</li>
+                                <li role="menuitem">Historial Events</li>
+                                                                                            <li role="menuitem">Submit a Story</li>
+                            </ul>
+                        </details>
+                                                <details>
+                            <summary>Community</summary>
+                            <ul class="dropdown" role="menu" aria-label="Products submenu">
+                                <li role="menuitem">Community Build Logs</li>
+                                <li role="menuitem">Discussion Board</li>
+                                <li role="menuitem">Events</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>About</summary>
+                            <ul class="dropdown" role="menu" aria-label="Products submenu">
+                                <li role="menuitem">Our Community</li>
+                                <li role="menuitem">Terms of Use</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Contact</summary>
+                            <ul class="dropdown" role="menu" aria-label="Products submenu">
+                                <li role="menuitem">Create an Account</li>
+                                <li role="menuitem">Newsletter Signup</li>
+                                <li role="menuitem">Contact Us</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </nav>
+            <!-- Web Navigation-->
+            
+            <!--Banner-->
+            <section class="banner"></section>
+            <!--Main Content-->
+            <section class="container">
+                <!--QuickNav-->
+                <section class="quick_nav_container">
+                    <span class="quick_nav_subcontainer"
+                        ><span class="nav-button"></span>
+                        <span class="nav-button"></span>
+                        <span class="nav-button"></span>
+                    </span>
+                    <span class="quick_nav_subcontainer"
+                        ><span class="nav-button"></span
+                        ><span class="nav-button"></span
+                        ><span class="nav-button"></span
+                    ></span>
+                    <span class="quick_nav_subcontainer_right"
+                        ><span class="nav-button"></span
+                        ><span class="nav-button"></span
+                        ><span class="nav-button"></span
+                    ></span>
+                </section>
+                <!--spotlight-container-->
+                <section class="spotlight-container">
+                    <p>spotlight-container</p>
+                </section>
+            </section>
+            <!--Footer-->
+            <footer class="site-footer"></footer>
+        </main>
+        <!-- Linking External JavaScript -->
+        <script type="module" src="js/index.js"></script>
+        <script type="module" src="js/modules/menu.js"></script>
+
     </body>
 </html>

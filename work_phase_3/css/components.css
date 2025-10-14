@@ -84,25 +84,17 @@
     BANNER 
 -----------------------*/
 .banner {
-    width: 100%;
+    width: 100%
     overflow: hidden;
-    position: relative;
 }
-
-/* Responsive banner image */
 
 .banner-image {
-    display: block;
+    display:block;
     width: 100%;
-    height: 200px; /* optional: limit banner height */
-    object-fit: cover; /* ensures image fills space without distortion */
-}
-
-@media (min-width: 768px) { .banner-image {
-    height: 485px; /* optional: limit banner height */
-}
+    height: 425px;
 
 }
+
 /*--------------------
     BREADCRUMB MENU
 ----------------------*/

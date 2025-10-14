@@ -1,0 +1,16 @@
+.spotlight-container {
+    min-height: 250px;
+    width: 100vw;
+    margin-left: -250px;
+    background-color: white;
+    border: solid #000;
+    border-width: 1px 0px 1px 0px;
+
+
+}                                                     
+/* Larger Screens */
+@media (min-width: 768px) {
+    .spotlight-container {
+
+    }
+}
