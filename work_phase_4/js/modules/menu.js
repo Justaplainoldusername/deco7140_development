@@ -10,3 +10,4 @@ navMenu.style.display = expanded ? 'none' : 'flex';
 });
 
 }
+

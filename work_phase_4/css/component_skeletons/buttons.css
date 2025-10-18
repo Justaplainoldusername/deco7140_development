@@ -2,16 +2,15 @@
 
 /* Button */
 button {
-  margin-top: 1.25rem;
   padding: 0.75rem 1.25rem;
   background: var(--secondary-color);
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
-  width: auto; /* full-width button on mobile */
+  width: fit-content;
 }
 
 .button-red {
