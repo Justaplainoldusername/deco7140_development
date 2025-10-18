@@ -1,6 +1,115 @@
-/* FONTS */
 
-/* HEADING AND PARAGRAPH STYLES */
+/* COLOURS */
+
+:root {
+    --primary-color: #557373; /* Medium Aqua */
+    --secondary-color: #233131; /* Dark Aqua */
+    --accent-color: #a64d2d; /* Burnt Orange */
+    --feature-gray-color: #99918b; /* Dark Grey */
+    --warm-background-color: #ffeddc; /* Light Beige */
+    --cool-background-color: #F5F5F5; /*Light Grey */
+}
+
+/* HEADINGS AND PARAGRAPH STYLES */
+
+.page-title {
+
+    font-family: "Cinzel", serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding-bottom: 1rem;
+        padding-top: 1rem;
+
+
+}
+
+@media (max-width: 767.9px) {.page-title::after {
+    line-height: 1.5;
+    content:"\A⚓︎";
+    white-space: pre;
+
+}
+}
+@media (min-width: 768px) { .page-title {
+        font-size: 4.2rem;
+        text-align: left;
+}
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-align: left;
+    color: var(--secondary-color);
+    padding-bottom: 1rem;
+
+        padding-top: 1rem;
+}
+
+@media (min-width: 768px) { h1 {
+        font-size: 2.4rem;
+        text-align: left;}
+}
+
+
+
+
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: left;
+    color: var(--secondary-color);
+    padding-bottom: 1rem;
+
+        padding-top: 1rem;
+        line-height: 1.3;
+}
+
+@media (min-width: 768px) { h2 {
+        font-size: 1.6rem;
+        text-align: left;}
+}
+
+
+h3 {
+    font-family: "Inter", sans-serif;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+        padding-top: 1rem;
+
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    line-height: 150%;
+        padding-top: 1rem;
+
+    padding-bottom: 1rem;
+}
+
+
+
+ul {
+    padding-bottom: 1rem;
+    margin-left: 25px;
+    list-style: disc;
+    font-family: "Inter", sans-serif;
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+li {
+}
 
 /* BODY BACKGROUND */
 

@@ -7,12 +7,11 @@
     justify-content: space-between;
     align-items: center;
     background: #fff;
-    border: 2px solid #000;
     border-radius: 48px;
-    padding: 1rem 1.25rem;
+    padding: 0rem 1rem;
     padding-right: 4px;
     margin-bottom: 8px;
-    box-shadow: 0 2px 6px var(--text-color); /* subtle drop shadow */
+    box-shadow: 0 2px 6px var(--feature-gray-color); /* subtle drop shadow */
     flex: 1 1 100%;                /* full width on mobile */
     text-decoration: none;
     color: var(--primary-color);
@@ -26,14 +25,14 @@
 
 .nav-button img {
 
-    height: 0px;
+    height: 45px;
     object-fit: contain;
     flex-shrink: 0;
 
 }
 
 .nav-button--primary {
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
 }
 
 .nav-button--primary-reversed {
