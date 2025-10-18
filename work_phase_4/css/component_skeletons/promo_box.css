@@ -1,0 +1,32 @@
+.promo-box {
+    width: 90%;
+    position: absolute;
+    top: 200px;
+    align-self: center;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 1rem;
+    background-color: var(--warm-background-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* optional for depth */
+}
+
+.promo-box .page-title {
+
+    font-size: 1.6rem;
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+
+    .promo-box {
+    top: 35%; 
+    right: 30px; 
+    width: 350px;
+    height: 250px;
+    opacity: 95%;
+}
+    .promo-box .page-title {
+        font-size: 2rem;
+    }
+
+}

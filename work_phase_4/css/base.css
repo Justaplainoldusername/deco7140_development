@@ -109,4 +109,26 @@ ul {
 li {
 }
 
+/* LINK STYLES */
 
+a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover,
+a:focus {
+font-weight: bold;
+text-decoration: none;  
+
+color: var(--accent-color);
+
+}
+
+a:active {
+    transform: translateY(0); /* reset on click */
+    border-color: var(--accent-color);
+    color: var(--accent-color)
+
+}

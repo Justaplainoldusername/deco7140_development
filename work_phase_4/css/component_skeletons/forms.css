@@ -1,0 +1,45 @@
+/*--FORMS    */
+
+#community-form {
+  width: 100%;
+  max-width: 100%;
+  /*margin: 1rem auto;*/
+  /*padding: 1rem;*/
+  background: #ffffff;
+  /*border: 1px solid #ddd;*/
+  /*border-radius: 12px;*/
+  font-family: system-ui, sans-serif;
+  color: var(--secondary-color);
+}
+#community-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+#community-form input[type="text"],
+#community-form input[type="email"],
+#community-form input[type="file"],
+#community-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+#community-form input:focus,
+#community-form textarea:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+  border-color: #005fcc;
+}
+
+@media (min-width: 768px) {
+  #community-form {
+    max-width: 480px; 
+    padding: 1.5rem;
+  }
+}
