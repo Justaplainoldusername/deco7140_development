@@ -5,7 +5,7 @@
     --primary-color: #557373; /* Medium Aqua */
     --secondary-color: #233131; /* Dark Aqua */
     --accent-color: #a64d2d; /* Burnt Orange */
-    --feature-gray-color: #99918b; /* Dark Grey */
+    --feature-gray-color: #7d756e; /* Dark Grey */
     --warm-background-color: #ffeddc; /* Light Beige */
     --cool-background-color: #F5F5F5; /*Light Grey */
 }
@@ -44,7 +44,6 @@ h1 {
     text-align: left;
     color: var(--secondary-color);
     padding-bottom: 1rem;
-
         padding-top: 1rem;
 }
 
@@ -80,9 +79,9 @@ h3 {
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 400;
-        padding-top: 1rem;
-
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
+    line-height: 1.5rem;
 }
 
 p {
@@ -107,8 +106,6 @@ ul {
     line-height: 1.5;
 }
 
-li {
-}
 
 /* LINK STYLES */
 
