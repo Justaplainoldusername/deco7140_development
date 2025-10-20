@@ -1,0 +1,12 @@
+.recent-activity {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.recent-activity h1 {
+    font-size: 1.8rem;
+    color: white;
+}

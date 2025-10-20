@@ -1,0 +1,55 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+    gap: 1rem;
+    align-content: center;
+}
+
+
+.sidebar .sidebar-subsection {
+
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.sidebar .sidebar-subsection h1 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.sidebar .card-container {
+
+    padding: 0px;
+    margin: 0;
+}
+
+.sidebar .card {
+
+}
+
+@media (min-width: 768px) {
+
+    .sidebar {
+    position: absolute;
+    top: 570px;
+    height: auto;
+    right:2%;
+    width: 25%;
+    padding: 1rem;
+
+    }
+
+    .sidebar .sidebar-subsection h1 {
+    }
+
+    .sidebar .card {
+        max-width: 100%;
+        height: 120px;
+    }
+}

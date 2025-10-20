@@ -53,6 +53,7 @@
 
 .hero-box {
     width: 90%;
+    height: 220px;
     position: absolute;
     top: 200px;
     align-self: center;
