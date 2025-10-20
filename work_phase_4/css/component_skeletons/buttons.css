@@ -5,7 +5,7 @@ button {
   padding: 0.75rem 1.25rem;
   background: var(--secondary-color);
   color: white;
-  border: none;
+
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 400;
@@ -15,6 +15,7 @@ button {
 
 .button-red {
 background: var(--accent-color);
+  border: solid var(--accent-color);
 }
 
 button:hover {

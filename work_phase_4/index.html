@@ -8,8 +8,13 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
-        <link rel="stylesheet" href="css/page_css/index.css"/> 
+        <link rel="stylesheet" href="css/page_css/index.css" />
         <!--Favicon -->
+                <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/favicon_io/favicon.ico"
+        />
         <!--Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,155 +24,301 @@
         />
         <title>Work Phase 4</title>
     </head>
-
     <body>
         <header>
-            <!-- Mobile Navigation-->
-            <nav class="top-nav" role="navigation" aria-label="Primary">
-                <div class="nav-inner">
-                    <div class="logo"><a href="index.html">The Model Shipbuilding Workshop</a></div>
-                    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
-                    <div class="nav-item" id="nav-menu">
-                        <details>
-                            <summary>Resources</summary>
-                            <ul class="dropdown" role="menu" aria-label="Resources submenu">
-                                <li role="menuitem">Kit Specific Guides</li>
-                                <li role="menuitem"><a href="common_techniques_and_mistakes.html">Techniques and Mistakes</a> </li>
-                                <li role="menuitem">Tools and Materials</li>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary>Stories</summary>
-                            <ul class="dropdown" role="menu" aria-label="Stories submenu">
-                                <li role="menuitem">Personal Stories</li>
-                                <li role="menuitem">Fiction</li>
-                                <li role="menuitem">Historial Events</li>
-                                                                                            <li role="menuitem">Submit a Story</li>
-                            </ul>
-                        </details>
-                                                <details>
-                            <summary>Community</summary>
-                            <ul class="dropdown" role="menu" aria-label="Community submenu">
-                                <li role="menuitem">Community Build Logs</li>
-                                <li role="menuitem">Discussion Board</li>
-                                <li role="menuitem">Events</li>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary>About</summary>
-                            <ul class="dropdown" role="menu" aria-label="About submenu">
-                                <li role="menuitem">Our Community</li>
-                                <li role="menuitem">Terms of Use</li>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary>Contact</summary>
-                            <ul class="dropdown" role="menu" aria-label="Contact submenu">
-                                <li role="menuitem">Create an Account</li>
-                                <li role="menuitem">Newsletter Signup</li>
-                                <li role="menuitem">Contact Us</li>
-                            </ul>
-                        </details>
-                        <details><summary role="menuitem"><a href="">Login</a></summary></details>
-                    </div>
+        <!-- Navigation-->
+        <nav class="top-nav" aria-label="Primary">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="index.html" aria-current="page">The Model Shipbuilding Workshop</a>
                 </div>
-            </nav>
-            <!-- Web Navigation-->   
-            <!--Banner-->
-            <section class="banner">
-                <img src="assets/banners/Home.jpg">
-                <span class="promo-box"><div class="page-title">"I'm a young fella again, dreaming of the sea."</div><button class="button-red">READ BOB'S STORY ></button></span>
-            </section>
-            <!--Main Content-->
+                <button
+                    class="menu-toggle"
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                >
+                    ☰
+                </button>
+                <div class="nav-item" id="nav-menu">
+                    <details>
+                        <summary>Resources</summary>
+                        <ul
+                            class="dropdown"
+                            
+                            aria-label="Resources submenu"
+                        >
+                            <li>Kit Specific Guides</li>
+                            <li>
+                                <a href="techniques_and_mistakes.html"
+                                    >Techniques and Mistakes</a
+                                >
+                            </li>
+                            <li>Tools and Materials</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Stories</summary>
+                        <ul
+                            class="dropdown"
+                            
+                            aria-label="Stories submenu"
+                        >
+                            <li>Personal Stories</li>
+                            <li>Fiction</li>
+                            <li>Historial Events</li>
+                            <li>Submit a Story</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Community</summary>
+                        <ul
+                            class="dropdown"
+                            
+                            aria-label="Community submenu"
+                        >
+                            <li>Community Build Logs</li>
+                            <li>Discussion Board</li>
+                            <li><a href="event_listing.html">Events</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>About</summary>
+                        <ul
+                            class="dropdown"
+                            
+                            aria-label="About submenu"
+                        >
+                            <li>Our Community</li>
+                            <li>Terms of Use</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Contact</summary>
+                        <ul
+                            class="dropdown"
+                    
+                            aria-label="Contact submenu"
+                        >
+                            <li>Create an Account</li>
+                            <li>Newsletter Signup</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </details>
+                    <summary ><a style="color: #e0e0e0;" href="">Login</a></summary>
+                </div>
+            </div>
+        </nav>
+            <!--hero-->
+            <section class="hero">
+                <img
+                    src="assets/banners/Home.jpg"
+                    alt="A model wooden yacht on a workbench surrounded by woodworking tools."
+                />
+                <span class="hero-box"
+                    ><heading class="headline">
+                        <q>"I'm a young fella again, dreaming of the sea."</q>
+                    </heading>
+                    <a class="nav-button nav-button-small-red" href="story_sydney_sails.html">READ BOB'S STORY ></a></span
+                >
+                </section>
+            </header>
+        <main>
             <section class="container">
                 <!--QuickNav-->
                 <section class="quick_nav_container">
-                    <span class="quick_nav_subcontainer"
-                        >
+                    <div class="quick_nav_subcontainer">
                         <h2>Resources</h2>
                         <a href="" class="nav-button nav-button--primary"
-                                ><p>Kit Specific Guides</p><img
-                                    src="assets\navigation\nav-icon-light.png" alt="Stylised compass icon"
-                            /></a>
+                            ><p>Kit Specific Guides</p>
+                            <img
+                                src="assets\navigation\nav-icon-light.png"
+                                alt="Stylised compass icon"
+                        /></a>
+                        <a href="techniques_and_mistakes.html" class="nav-button nav-button--primary"
+                            ><p>Techniques and Mistakes</p>
+                            <img
+                                src="assets\navigation\nav-icon-light.png"
+                                alt="Stylised compass icon"
+                        /></a>
                         <a href="" class="nav-button nav-button--primary"
-                                ><p>Techniques and Mistakes</p><img
-                                    src="assets\navigation\nav-icon-light.png" alt="Stylised compass icon"
-                            /></a>  
+                            ><p>Tools and Materials</p>
+                            <img
+                                src="assets\navigation\nav-icon-light.png"
+                                alt="Stylised compass icon"
+                        /></a>
+                    </div>
+                    <div class="quick_nav_subcontainer">
+                        <h2>Community</h2>
                         <a href="" class="nav-button nav-button--primary"
-                                ><p>Tools and Materials</p><img
-                                    src="assets\navigation\nav-icon-light.png" alt="Stylised compass icon"
-                            /></a>                            
-                    </span>
-                    <span class="quick_nav_subcontainer"
-                        > <h2>Community</h2>
+                            ><p>Community Build Logs</p>
+                            <img
+                                src="assets\navigation\nav-icon-light.png"
+                                alt="Stylised compass icon"
+                        /></a>
                         <a href="" class="nav-button nav-button--primary"
-                                ><p>Community Build Logs</p><img
-                                    src="assets\navigation\nav-icon-light.png" alt="Stylised compass icon"
-                            /></a>
+                            ><p>Discussion Board</p>
+                            <img
+                                src="assets\navigation\nav-icon-light.png"
+                                alt="Stylised compass icon"
+                        /></a>
                         <a href="" class="nav-button nav-button--primary"
-                                ><p>Discussion Board</p><img
-                                    src="assets\navigation\nav-icon-light.png" alt="Stylised compass icon"
-                            /></a>  
-                        <a href="" class="nav-button nav-button--primary"
-                                ><p>Events</p><img
-                                    src="assets\navigation\nav-icon-light.png" alt="Stylised compass icon"
-                            /></a>
-
-                    </span>
-                    <span class="quick_nav_subcontainer_right"
+                            ><p>Events</p>
+                            <img
+                                src="assets\navigation\nav-icon-light.png"
+                                alt="Stylised compass icon"
+                        /></a>
+                    </div>
+                    <div class="quick_nav_subcontainer_right"
                         ><h2>Recent Activity</h2>
-                        <span class="nav-button nav-button--primary"><p></p></span
-                        ><span class="nav-button nav-button--primary"><p></p></span
-                        ><span class="nav-button nav-button--primary"><p></p></span
-                    ></span>
+                        <a href="" class="nav-button nav-button--primary"
+                            ><p></p></a
+                        ><a href="" class="nav-button nav-button--primary"
+                            ><p></p></a
+                        ><a href="" class="nav-button nav-button--primary"
+                            ><p></p></a
+                    ></div>
                 </section>
                 <!--spotlight-container-->
                 <section class="spotlight-container">
                     <div class="spotlight-container-content">
                         <h1>Join The Community</h1>
-                        <p>Interested in model boat building? Whether you're an experienced builder or just getting ready to attempt your first build, our community of Builders are here to help. </p>
-                    <span><form id="community-form" enctype="multipart/form-data">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required />
+                        <p>
+                            Interested in model boat building? Whether you're an
+                            experienced builder or just getting ready to attempt
+                            your first build, our community of Builders are here
+                            to help.
+                        </p>
+                        <span
+                            ><form
+                                id="community-form"
+                                enctype="multipart/form-data"
+                            ><fieldset><legend>Join Our Community</legend>
+                                <label for="name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                />
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                ></textarea>
 
-                    <label for="photo">Upload photo (max 10MB)</label>
-                    <input type="file" id="photo" name="photo" />
+                                <label for="photo"
+                                    >Upload photo (max 10MB)</label
+                                >
+                                <input type="file" id="photo" name="photo" />
 
-                    <button type="submit">
-                        Join the Community
-                    </button>
-                    <!-- Feedback message area -->
-                    <p id="form-feedback" aria-live="polite"></p>
-                </form></span>
+                                <button type="submit">
+                                    Join the Community
+                                </button>
+                                <!-- Feedback message area -->
+                                <p
+                                    id="form-feedback"
+                                    aria-live="polite"
+                                ></p></fieldset></form
+                        ></span>
                     </div>
-            </section>
-            <!--highlighted-stories-card-container-->
-            <section class="card-container">
-            <h1>Featured Stories</h1>
-            <a class="card" href="sydney_sails.html"><img src="assets/stories/bob-and-his-grandaughter.png" alt="Grandfather and grandaughter building a model boot together."><div class="text-box"><h3>Sydney Sails</h3><p>Bob's early memories and the hobby he shares with his grandaughter.</p></div></a>
-            <a class="card" href=""><img src="assets/stories/man-in-fifties.jpg" alt="Grandfather and grandaughter building a model boot together."><div class="text-box"><h3>Crossing the Strait</h3><p>A dicey night on rough seas inspired Gerard's first build.</p></div></a>
-            <a class="card" href=""><img src="assets/stories/lady-in-seventies.jpg" alt="Grandfather and grandaughter building a model boot together."><div class="text-box"><h3>Sailing Solo</h3><p>Kathy shares her solo sailing adventures and the builds that followed.</p></div></a>
-            <a class="card" href="\"><img src="assets/stories/young-couple.png" alt="Grandfather and grandaughter building a model boot together."><div class="text-box"><h3>St Elmo's Fire</h3><p>How a rare weather phenomenon sparked more than just an interest in models.</p></div></a>
-
-            </section>
-
+                </section>
+                <!--highlighted-stories-card-container-->
+                <section class="card-container">
+                    <h1>Featured Stories</h1>
+                    <a class="card" href="story_sydney_sails.html"
+                        ><img
+                            src="assets/stories/bob-and-his-grandaughter.png"
+                            alt="Grandfather and grandaughter building a model boot together."
+                        />
+                        <div class="text-box">
+                            <h3>Sydney Sails</h3>
+                            <p>
+                                Bob's early memories and the hobby he shares
+                                with his grandaughter.
+                            </p>
+                        </div></a
+                    >
+                    <a class="card" href=""
+                        ><img
+                            src="assets/stories/man-in-fifties.jpg"
+                            alt="A man in his workshop building a model boat."
+                        />
+                        <div class="text-box">
+                            <h3>Crossing the Strait</h3>
+                            <p>
+                                A dicey night on rough seas inspired Gerard's
+                                first build.
+                            </p>
+                        </div></a
+                    >
+                    <a class="card" href=""
+                        ><img
+                            src="assets/stories/lady-in-seventies.jpg"
+                            alt="A woman building a model boat."
+                        />
+                        <div class="text-box">
+                            <h3>Sailing Solo</h3>
+                            <p>
+                                Kathy shares her solo sailing adventures and the
+                                builds that followed.
+                            </p>
+                        </div></a
+                    >
+                    <a class="card" href="\"
+                        ><img
+                            src="assets/stories/young-couple.png"
+                            alt="A you woman and a young man in building a model boat in their living room."
+                        />
+                        <div class="text-box">
+                            <h3>St Elmo's Fire</h3>
+                            <p>
+                                How a rare weather phenomenon sparked more than
+                                just an interest in models.
+                            </p>
+                        </div></a
+                    >
+                </section>
             </section>
             <!--Footer-->
             <footer class="site-footer">
-                <span class="acknowledgement"><h2>Acknowledgement of Traditional Owners</h2><p>We acknowledge the Traditional Owners of the land on which we live, work and create. We pay our respects to Elders past and present, and recognise the enduring connection of Aboriginal and Torres Strait Islander peoples to Country, culture and community.</p><p>We celebrate the richness of First Nations knowledge, art and storytelling, and recognise their continuing contribution to the life of this nation.</p></span>
-                <span class="quicklinks"><h2>Quicklinks</h2><ul><li><a href="">About Our Community</a></li><li><a href="">Terms of Use</a></li><li><a href="">Contact Us</a></li></ul></span>
-                <span><p>© Connected Communities Initiative, 2025 </p></span>
+                <div class="acknowledgement"
+                    ><h2>Acknowledgement of Traditional Owners</h2>
+                    <p>
+                        We acknowledge the Traditional Owners of the land on
+                        which we live, work and create. We pay our respects to
+                        Elders past and present, and recognise the enduring
+                        connection of Aboriginal and Torres Strait Islander
+                        peoples to Country, culture and community.
+                    </p>
+                    <p>
+                        We celebrate the richness of First Nations knowledge,
+                        art and storytelling, and recognise their continuing
+                        contribution to the life of this nation.
+                    </p></div
+                >
+                <div class="quicklinks"
+                    ><h2>Quicklinks</h2>
+                    <ul>
+                        <li><a href="">About Our Community</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul></div
+                >
+                <div><p>© Connected Communities Initiative, 2025</p></div>
             </footer>
         </main>
         <!-- Linking External JavaScript -->
         <script type="module" src="js/index.js"></script>
         <script type="module" src="js/modules/menu.js"></script>
-
     </body>
 </html>

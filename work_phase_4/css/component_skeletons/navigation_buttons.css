@@ -1,6 +1,6 @@
 /*-----NAVIGATION BUTTONS------*/
 
-/* Individual buttons/links */
+/* Large Navigation Buttons*/
 .nav-button {
     display: flex;
     width: 100%;
@@ -12,23 +12,20 @@
     padding-right: 4px;
     margin-bottom: 8px;
     box-shadow: 0 2px 6px var(--feature-gray-color); /* subtle drop shadow */
-    flex: 1 1 100%;                /* full width on mobile */
+    flex: 1 1 100%; /* full width on mobile */
     text-decoration: none;
     color: var(--primary-color);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    transition: transform 0.15s ease, 
-                box-shadow 0.15s ease, 
-                border-color 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease,
+        border-color 0.15s ease;
 }
 
 .nav-button img {
-
     height: 45px;
     object-fit: contain;
     flex-shrink: 0;
-
 }
 
 .nav-button--primary {
@@ -43,7 +40,6 @@
 
 .nav-button--secondary {
     border: 2px solid var(--accent-color);
-
 }
 
 .nav-button--secondary-reversed {
@@ -51,7 +47,6 @@
     background-color: var(--accent-color);
     color: #fff;
 }
-
 
 .nav-button:hover,
 .nav-button:focus {
@@ -69,7 +64,6 @@
     border-color: var(--primary-color);
 }
 
-
 .nav-button:focus-visible {
     outline: 3px solid var(--accent-color);
     outline-offset: 4px;
@@ -77,8 +71,33 @@
 
 .nav-button:active {
     transform: translateY(0);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
     background: var(--accent-color);
     color: #fff;
     border-color: var(--accent-color);
+}
+
+/*----Small Navigation Buttons------*/
+
+.nav-button-small-red {
+    padding: 0.75rem 1.25rem;
+    background: var(--accent-color);
+    border: solid var(--accent-color);
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.nav-button-small:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.nav-button-small:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    transform: translateY(-2px);
 }
