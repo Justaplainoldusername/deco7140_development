@@ -1,5 +1,61 @@
 /* BUTTONS */
 
+button {
+  padding: 0.75rem 1.25rem;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.button-red {
+background: var(--accent-color);
+  border: solid var(--accent-color);
+}
+
+button:hover {
+  background: var(--primary-color);
+      transform: translateY(-2px);
+
+}
+
+button:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+      transform: translateY(-2px);
+
+}
+
+
+
+
 /* CARDS */
+
+.simple-card {
+
+    background-color: white;
+    background-color: var(--warm-background-color);
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.simple-card img {
+
+    height: 150px;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
 
 /* NAVIGATION BARS */

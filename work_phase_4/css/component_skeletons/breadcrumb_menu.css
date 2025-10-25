@@ -1,0 +1,27 @@
+ul.breadcrumb {
+    display: inline;
+    padding: 10px 16px;
+    list-style: none; 
+    font-size: 18px;
+}
+
+li.breadcrumb {
+    float: left;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--primary-color);
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
