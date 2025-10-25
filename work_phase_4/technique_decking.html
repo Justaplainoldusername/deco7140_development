@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
-        <link rel="stylesheet" href="css/page_css/technique_dead_eyes.css" />
+        <link rel="stylesheet" href="css/page_css/technique_decking.css" />
         <!--Favicon -->
                 <link
             rel="icon"
@@ -22,7 +22,7 @@
             href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
-        <title>Technique - Dead Eyes</title>
+        <title>Technique - Decking</title>
     </head>
     <body>
         <header>
@@ -123,14 +123,103 @@
                 </section>
             </header>
         <main>
+        <main>
             <section class="container">
-                <heading class="page-title">Dead Eyes</heading>
-                
+                <article class="article-container">
+                    <heading class="page-title">Decking</heading>
+                    <h2> Decking can either be a joy or a pain, depending on your technique and materials. Here we provide our advice on approaching this fiddly but rewarding aspect of the build.</h2>
+                    <h3>1. Prepare the Hull</h3>
+                    <p>Ensure the hull is fully sanded smooth and symmetrical.
+Mark the deck’s position on the hull using the plans as a guide.
+Dry-fit any bulkheads or beams that will support the deck to check alignment.</p>
+                    <h3>2. Fit the Deck Beams and Subdeck</h3>
+                    <p>Glue the deck beams and any supports firmly into place.
+Add the subdeck (usually a thin plywood sheet) and clamp or pin it while the glue dries.
+Once dry, sand it smooth and level—it forms the base for your planking.</p>
+                    <h3>3. Plan the Planking Layout</h3>
+                    <p>Mark the centerline and plank runs on the subdeck.
+Decide on plank width, length, and any joggling or nibbing near the edges.
+Pre-cut and taper planks where necessary to match the ship’s curves.</p>
+                    <h3>4. Lay the Planks</h3>
+                    <p>Start from the centerline and work outward on both sides for symmetry.
+Use wood glue sparingly to prevent staining.
+Stagger butt joints for a realistic look.
+Clamp or pin each plank until the glue sets.</p>
+<section class="gallery"><img src="assets/decking/staggered-joints.png" alt="Close up of model boat deck"></section>
+                    <h3>5. Sand and Seal</h3>
+                    <p>Once all planks are laid, sand the deck smooth and even.
+Remove any excess glue or filler.
+Apply a clear sealer, varnish, or light oil to protect the wood and bring out the grain.</p>
+                </article>
             </section>
-            <!--Footer-->
-            <footer class="site-footer">
-                <div class="acknowledgement"
-                    ><h2>Acknowledgement of Traditional Owners</h2>
+            <!-- Sidebar-->
+            <section class="sidebar">
+                <div class="sidebar-subsection">
+                    <h1>RECENT ACTIVITY</h1>
+                </div>
+                <div class="sidebar-subsection">
+                    <h1>FEATURED STORIES</h1>
+                    <section class="card-container" >
+                        <a class="card" href="story_sydney_sails.html"
+                            ><img
+                                src="assets/stories/bob-and-his-grandaughter.png"
+                                alt="Grandfather and grandaughter building a model boot together."
+                            />
+                            <div class="text-box">
+                                <h3>Sydney Sails</h3>
+                                
+                            </div></a
+                        >
+                        <a class="card" href=""
+                            ><img
+                                src="assets/stories/man-in-fifties.jpg"
+                                alt="A man in his workshop building a model boat."
+                            />
+                            <div class="text-box">
+                                <h3>Crossing the Strait</h3>
+                            
+                            </div></a
+                        >
+                        <a class="card" href=""
+                            ><img
+                                src="assets/stories/lady-in-seventies.jpg"
+                                alt="A woman building a model boat."
+                            />
+                            <div class="text-box">
+                                <h3>Sailing Solo</h3>
+                                
+                            </div></a
+                        >
+                        <a class="card" href="\"
+                            ><img
+                                src="assets/stories/young-couple.png"
+                                alt="A you woman and a young man in building a model boat in their living room."
+                            />
+                            <div class="text-box">
+                                <h3>St Elmo's Fire</h3>
+                                
+                            </div></a
+                        >
+                        </div>
+            </section>
+            <!--Image Viewer-->
+
+                    <aside class="viewer" id="viewer" aria-hidden="true">
+                        <button
+                            id="close-viewer"
+                            aria-label="Close image viewer"
+                        >
+                            ✖
+                        </button>
+                        <img id="viewer-img" src="" alt="Close button for viewer" />
+                        <p id="viewer-caption"></p>
+                    </aside>            
+            
+                    <!--Footer-->
+            
+                    <footer class="site-footer">
+                <div class="acknowledgement">
+                    <h2>Acknowledgement of Traditional Owners</h2>
                     <p>
                         We acknowledge the Traditional Owners of the land on
                         which we live, work and create. We pay our respects to
@@ -142,20 +231,23 @@
                         We celebrate the richness of First Nations knowledge,
                         art and storytelling, and recognise their continuing
                         contribution to the life of this nation.
-                    </p></div
-                >
-                <div class="quicklinks"
-                    ><h2>Quicklinks</h2>
+                    </p>
+                </div>
+                <div class="quicklinks">
+                    <h2>Quicklinks</h2>
                     <ul>
                         <li><a href="">About Our Community</a></li>
                         <li><a href="">Terms of Use</a></li>
                         <li><a href="">Contact Us</a></li>
-                    </ul></div
-                >
+                    </ul>
+                </div>
                 <div><p>© Connected Communities Initiative, 2025</p></div>
             </footer>
         </main>
+           
         <!-- Linking External JavaScript -->
         <script type="module" src="js/modules/menu.js"></script>
+                <script type="module" src="js/technique_decking.js"></script>
+
     </body>
 </html>

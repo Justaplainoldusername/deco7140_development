@@ -1,2 +1,16 @@
 @import url("../component_skeletons/cards.css");
 @import url("../component_skeletons/navigation_buttons.css");
+@import url("../component_skeletons/sidebar.css");
+
+
+.card-container {
+
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+    width: 55%;
+    }
+}

@@ -89,6 +89,7 @@
     font-weight: 400;
     cursor: pointer;
     width: fit-content;
+    margin-top: 1rem;
 }
 
 .nav-button-small:hover {

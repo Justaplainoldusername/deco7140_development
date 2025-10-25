@@ -1,5 +1,6 @@
 .spotlight-container {
     display: flex;
+    flex-direction: row;
     min-height: 250px;
     width: 100vw;
     position: relative;
@@ -16,8 +17,9 @@
 
 .spotlight-container-content {
     background-color: white;
-    width: auto;
+    width: 100%;
     padding: 2rem;
+    background-color: aqua;
 
 }
 

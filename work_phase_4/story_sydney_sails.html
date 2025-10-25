@@ -174,9 +174,47 @@
                         time I build one, I feel like I’m adding another
                         chapter. Wouldn’t trade it for the world, mate.
                     </p>
+                    <!--Comments Section-->
                     <div class="comments"><h2>Comments</h2></div>
+                    <form
+                                id="chat-form"
+                                enctype="multipart/form-data"
+                            ><fieldset><legend>Join Our Community</legend>
+                                <label for="name">Person Name</label>
+                                <input
+                                    type="text"
+                                    id="person_name"
+                                    name="person_name"
+                                    required
+                                />
+
+                                <label for="title">Title</label>
+                                <input
+                                    type="text"
+                                    id="chat_post_title"
+                                    name="chat_post_title"
+                                    required
+                                />
+
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="chat_post_content"
+                                    name="chat_post_content"
+                                    rows="4"
+                                ></textarea>
+                                <button type="submit">
+                                    Post Comment
+                                </button>
+                                <!-- Feedback message area -->
+                                <p
+                                    id="form-feedback"
+                                    aria-live="polite"
+                                ></p></fieldset></form
+                        >
+
                 </article>
             </section>
+            <!-- Sidebar-->
             <section class="sidebar">
                 <div class="sidebar-subsection">
                     <h1>RECENT ACTIVITY</h1>
@@ -225,7 +263,6 @@
                             </div></a
                         >
                         </div>
-                </section>
             </section>
             <!--Footer-->
             <footer class="site-footer">
