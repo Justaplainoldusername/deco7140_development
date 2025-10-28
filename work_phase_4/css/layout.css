@@ -42,6 +42,12 @@
     background-color: var(--secondary-color);
 }    
 
+.hero .visually-hidden {
+    position: fixed;
+    z-index: -100;
+    opacity: 0;
+}
+
 .hero img {
     display:block;
     width: 1900px;
@@ -71,7 +77,6 @@
     text-align: center;
     color: var(--secondary-color);
     font-weight: 500;
-    padding-bottom: 1rem;
     padding-top: 1rem;
 
 }
@@ -157,7 +162,6 @@ width:100%;
 }
 
 .logo a:hover, .logo a:focus {
-    color: var(--accent-color);
 }
 
 .menu-toggle{

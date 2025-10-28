@@ -1,0 +1,85 @@
+import React from 'react';
+
+interface MatrixProps {
+  size?: number;
+  markedCells?: Set<string>;
+}
+
+export function Matrix({ size = 20, markedCells = new Set() }: MatrixProps) {
+  // Generate row and column labels (1-20)
+  const labels = Array.from({ length: size }, (_, i) => (i + 1).toString());
+
+  return (
+    <div className="inline-block p-8">
+      <div className="flex">
+        {/* Empty corner cell */}
+        <div className="w-10 h-10" />
+        
+        {/* Column labels */}
+        <div className="flex">
+          {labels.map((label) => (
+            <div
+              key={`col-${label}`}
+              className="w-10 h-10 flex items-center justify-center"
+              style={{ 
+                color: '#233131', 
+                fontFamily: 'sans-serif',
+                transform: 'rotate(-45deg)',
+                transformOrigin: 'center'
+              }}
+            >
+              {label}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Matrix rows */}
+      {labels.map((rowLabel, rowIndex) => (
+        <div key={`row-${rowLabel}`} className="flex">
+          {/* Row label */}
+          <div
+            className="w-10 h-10 flex items-center justify-center"
+            style={{ color: '#233131', fontFamily: 'sans-serif' }}
+          >
+            {rowLabel}
+          </div>
+
+          {/* Matrix cells */}
+          <div className="flex">
+            {labels.map((colLabel, colIndex) => {
+              const cellKey = `${rowIndex}-${colIndex}`;
+              const isMarked = markedCells.has(cellKey);
+              
+              // Determine which corners should be rounded
+              const isTopLeft = rowIndex === 0 && colIndex === 0;
+              const isTopRight = rowIndex === 0 && colIndex === size - 1;
+              const isBottomLeft = rowIndex === size - 1 && colIndex === 0;
+              const isBottomRight = rowIndex === size - 1 && colIndex === size - 1;
+              
+              let borderRadius = '';
+              if (isTopLeft) borderRadius = '8px 0 0 0';
+              if (isTopRight) borderRadius = '0 8px 0 0';
+              if (isBottomLeft) borderRadius = '0 0 0 8px';
+              if (isBottomRight) borderRadius = '0 0 8px 0';
+
+              return (
+                <div
+                  key={`cell-${rowIndex}-${colIndex}`}
+                  className="w-10 h-10 flex items-center justify-center"
+                  style={{
+                    border: '1px solid #233131',
+                    color: '#233131',
+                    borderRadius: borderRadius,
+                  }}
+                >
+                  {isMarked && 'X'}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

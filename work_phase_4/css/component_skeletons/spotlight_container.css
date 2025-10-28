@@ -1,13 +1,12 @@
 .spotlight-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     min-height: 250px;
     width: 100vw;
     position: relative;
     left: 50%;
     right:50%;
     margin-left: -50vw;
-    margin-right: -50vw;
     background-color: white;
     border: solid var(--feature-gray-color);
     border-width: 1px 0px 1px 0px;
@@ -16,19 +15,24 @@
 
 
 .spotlight-container-content {
+    
     background-color: white;
-    width: 100%;
     padding: 2rem;
-    background-color: aqua;
 
 }
 
 
 /* Larger Screens */
 @media (min-width: 768px) {
+    .spotlight-container {
+        flex-direction: row;
+        padding-left: 20%;
+        padding-right: 20%;
+
+
+    }
     .spotlight-container-content {
-        width: 90vw;
-        margin-left: 15vw;
-        margin-right: 15vw;
+        flex-basis: 100%;
+
     }
 }

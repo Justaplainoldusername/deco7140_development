@@ -38,6 +38,7 @@
                         class="menu-toggle"
                         aria-expanded="false"
                         aria-controls="nav-menu"
+                        
                     >
                         ☰
                     </button>
@@ -97,31 +98,30 @@
             </nav>
             <!--Hero-->
             <section class="hero">
+                <h1 class="visually-hidden">Featured Story</h1>
                 <img
                     src="assets/banners/Home.jpg"
-                    alt="A model wooden yacht on a workbench surrounded by woodworking tools."
+                    alt="Bob's model wooden yacht on a workbench surrounded by woodworking tools."
                 />
-                <span class="hero-box"
-                    ><heading class="headline">
-                        <q>"I'm a young fella again, dreaming of the sea."</q>
-                    </heading>
+                <div class="hero-box"
+                    ><blockquote class="headline" cite="story_sydney_sails.html">"I'm a young fella again, dreaming of the sea."
+                    </blockquote>
                     <a
                         class="nav-button nav-button-small-red"
                         href="story_sydney_sails.html"
-                        >READ BOB'S STORY ></a
-                    ></span
-                >
+                        >READ BOB'S STORY</a
+                    ></div              >
             </section>
         </header>
         <main>
             <section class="container">
-                <heading class="page-title" >THE MODEL BOAT BUILDING WORKSHOP</heading>
-                <h2>
+                <heading class="page-title" >THE MODEL SHIPBUILDING WORKSHOP</heading>
+                <div class="page-summary">
                     Welcome to our hub for all things model boat
                     building. We're glad you made it! Here are some helpful
                     links to get your started, be it for your first build or
                     your fiftieth.
-                </h2>
+                </div>
                 <!--QuickNav-->
                 <section class="quick_nav_container">
                     <div class="quick_nav_subcontainer">
@@ -184,10 +184,7 @@
                     <div class="spotlight-container-content">
                         <h1>Join The Community</h1>
                         <p>
-                            Interested in model boat building? Whether you're an
-                            experienced builder or just getting ready to attempt
-                            your first build, our community of Builders are here
-                            to help.
+                            Interested in model boat building? Join the community to receive our monthly Newsletter filled with all things model boat building.
                         </p>
                     </div>
                     <div class="spotlight-container-content">
@@ -211,7 +208,7 @@
                                     required
                                 />
 
-                                <label for="message">Message</label>
+                                <label for="message">Message (Optional)</label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -219,7 +216,7 @@
                                 ></textarea>
 
                                 <label for="photo"
-                                    >Upload photo (max 10MB)</label
+                                    >Upload photo (Optional. Max 10MB)</label
                                 >
                                 <input type="file" id="photo" name="photo" />
 
@@ -235,10 +232,10 @@
                 <!--highlighted-stories-card-container-->
                 <section class="card-container">
                     <h1>Featured Stories</h1>
-                    <a class="card" href="story_sydney_sails.html"
+                    <a class="card" href="story_sydney_sails.html" aria-label="Read Bob's story: Sydney Sails. Bob's early memories and the hobby he shares with his grandaughter."
                         ><img
                             src="assets/stories/bob-and-his-grandaughter.png"
-                            alt="Grandfather and grandaughter building a model boot together."
+                            alt="Bob and his grandaughter building a model boat together."
                         />
                         <div class="text-box">
                             <h3>Sydney Sails</h3>
@@ -248,10 +245,12 @@
                             </p>
                         </div></a
                     >
-                    <a class="card" href=""
+                    <a class="card" href="index.html" aria-label="Read Gerard's story: Crossing the Strait. A dicey night on rough seas inspired Gerard's
+                                first build."
                         ><img
                             src="assets/stories/man-in-fifties.jpg"
                             alt="A man in his workshop building a model boat."
+                            
                         />
                         <div class="text-box">
                             <h3>Crossing the Strait</h3>
@@ -274,7 +273,8 @@
                             </p>
                         </div></a
                     >
-                    <a class="card" href="\"
+                
+                    <a  class="card" href="\"
                         ><img
                             src="assets/stories/young-couple.png"
                             alt="A you woman and a young man in building a model boat in their living room."
