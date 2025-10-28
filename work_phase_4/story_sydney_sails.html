@@ -182,41 +182,32 @@
                     </p>
                     <!--Comments Section-->
                     <div class="comments"><h2>Comments</h2></div>
-                    <form
-                                id="chat-form"
-                                enctype="multipart/form-data"
-                            ><fieldset><legend>Join Our Community</legend>
-                                <label for="name">Person Name</label>
+                    <form id="comments-form" enctype="multipart/form-data">
+                            <fieldset>
+                                <legend>Comments</legend>
+                                <label for="name">Name</label>
                                 <input
                                     type="text"
-                                    id="person_name"
-                                    name="person_name"
+                                    id="name"
+                                    name="name"
+                                    autocomplete="name"
                                     required
                                 />
-
-                                <label for="title">Title</label>
-                                <input
-                                    type="text"
-                                    id="chat_post_title"
-                                    name="chat_post_title"
-                                    required
-                                />
-
-                                <label for="message">Message</label>
+                                <label for="message">Message (Optional)</label>
                                 <textarea
-                                    id="chat_post_content"
-                                    name="chat_post_content"
+                                    id="message"
+                                    name="message"
                                     rows="4"
                                 ></textarea>
+
                                 <button type="submit">
                                     Post Comment
                                 </button>
                                 <!-- Feedback message area -->
-                                <p
-                                    id="form-feedback"
-                                    aria-live="polite"
-                                ></p></fieldset></form
-                        >
+                                <p id="form-feedback" aria-live="polite"></p>
+                            </fieldset>
+                        </form>
+                                            <div id="comments-list"></div>
 
                 </article>
             </section>
@@ -300,5 +291,7 @@
         </main>
         <!-- Linking External JavaScript -->
         <script type="module" src="js/modules/menu.js"></script>
+                <script type="module" src="js/story_sydney_sails.js"></script>
+
     </body>
 </html>

@@ -1,6 +1,6 @@
 /*--FORMS    */
 
-#community-form, #event-form, #chat-form {
+#community-form, #event-form, #comments-form {
   width: 100%;
   max-width: 100%;
   /*margin: 1rem auto;*/
@@ -11,17 +11,17 @@
   font-family: system-ui, sans-serif;
   color: var(--secondary-color);
 }
-#community-form label, #event-form label, #chat-form label {
+#community-form label, #event-form label, #community-form label {
   display: bl;
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
 
-#community-form input, #event-form input, #chat-form input [type="text"],
+#community-form input, #event-form input, #comments-form input [type="text"],
 #community-form input [type="email"],
 #community-form input [type="file"],
-#community-form textarea, #event-form textarea, #chat-form textarea {
+#community-form textarea, #event-form textarea, #comments-form textarea {
   width: 100%;
   padding: 0.6rem;
   border: 1px solid #999;
