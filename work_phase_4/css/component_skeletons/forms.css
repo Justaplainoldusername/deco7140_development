@@ -18,10 +18,10 @@
   margin-bottom: 0.25rem;
 }
 
-#community-form input, #chat-form input [type="text"],
+#community-form input, #event-form input, #chat-form input [type="text"],
 #community-form input [type="email"],
 #community-form input [type="file"],
-#community-form textarea, #chat-form textarea {
+#community-form textarea, #event-form textarea, #chat-form textarea {
   width: 100%;
   padding: 0.6rem;
   border: 1px solid #999;
@@ -36,6 +36,47 @@
   outline-offset: 3px;
   border-color: var(--secondary-color)
 
+}
+
+/* Styling for datetime input in #event-form */
+#event-form input[type="datetime-local"] {
+  appearance: none;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #fdfdfd;
+  color: var(--secondary-color);
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+/* Focus effect */
+#event-form input[type="datetime-local"]:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.2);
+  outline: none;
+}
+
+/* Hover effect */
+#event-form input[type="datetime-local"]:hover {
+  background-color: #fff;
+  border-color: var(--accent-color);
+}
+
+/* Improve icon and text appearance */
+#event-form input[type="datetime-local"]::-webkit-datetime-edit {
+  padding: 0 0.25rem;
+}
+#event-form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+#event-form input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
 }
 @media (min-width: 768px) {
   #community-form {

@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         feedback.textContent = "Submitting...";
 
-        const { success, data } = await postFormData(form, 'https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/genericevent/', { //check if backstrokes required
+        const { success, data } = await postFormData(form, `https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/genericevent/`, {
             'student_number': 's4794039',
             'uqcloud_zone_id': 'e9ee3aeb',
         });

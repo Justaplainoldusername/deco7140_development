@@ -134,21 +134,10 @@
             </header>
         <main>
             <section class="container">
-                <heading class="page-title">Event Listing</heading>
-                <section class="spotlight-container">
                     <div class="spotlight-container-content">
-                        <h1>Join The Community</h1>
-                        <p>
-                            Interested in model boat building? Whether you're an
-                            experienced builder or just getting ready to attempt
-                            your first build, our community of Builders are here
-                            to help.
-                        </p>
-                        <span
-                            ><form
-                                id="event-form"
-                                enctype="multipart/form-data"
-                            ><fieldset><legend>Submit an Event</legend>
+                        <form id="event-form"   enctype="multipart/form-data">
+                            <fieldset>
+                                <legend>Post Your Event</legend>
                                 <label for="event_name">Event Name</label>
                                 <input
                                     type="text"
@@ -156,18 +145,25 @@
                                     name="event_name"
                                     required
                                 />
-                                <label for="location">Location</label>
+                                                                <label for="location">Location</label>
                                 <input
                                     type="text"
                                     id="location"
                                     name="location"
                                     required
                                 />
-                                <label for="organiser">Organiser</label>
+   <label for="organiser">Organiser</label>
                                 <input
                                     type="text"
                                     id="organiser"
                                     name="organiser"
+                                    required
+                                />
+                                   <label for="event_type">Event Type</label>
+                                <input
+                                    type="text"
+                                    id="event_type"
+                                    name="event_type"
                                     required
                                 />
 
@@ -177,17 +173,9 @@
                                     name="description"
                                     rows="4"
                                 ></textarea>
-                                
-                                <label for="date_time">Date and Time</label>
-                                <input
-                                    type="datetime-local"
-                                    id="date_time"
-                                    name="date_time"
-                                    required
-                                />
-
+<label for="date">Date</label><input type="datetime-local" id="date_time" name="date_time" />
                                 <label for="photo"
-                                    >Upload photo (max 10MB)</label
+                                    >Upload photo (Optional. Max 10MB)</label
                                 >
                                 <input type="file" id="photo" name="photo" />
 
@@ -195,14 +183,10 @@
                                     Submit Event
                                 </button>
                                 <!-- Feedback message area -->
-                                <p
-                                    id="form-feedback"
-                                    aria-live="polite"
-                                ></p></fieldset></form
-                        ></span>
+                                <p id="form-feedback" aria-live="polite"></p>
+                            </fieldset>
+                        </form>
                     </div>
-                </section>              
-            <div id="community-list"></div>
             </section>
             <!--Footer-->
             <footer class="site-footer">
