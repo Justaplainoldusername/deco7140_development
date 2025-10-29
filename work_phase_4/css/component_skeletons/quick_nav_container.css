@@ -8,16 +8,27 @@
 .quick_nav_subcontainer {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+
 
 }
 
 .quick_nav_subcontainer_right {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+
     
 }
+
+.quick_nav_subcontainer ul, .quick_nav_subcontainer_right ul {
+
+    list-style-type: none;
+    padding-bottom: 0rem;
+    margin-left: 0;
+    line-height: 0;
+
+}
+
+
 
 /* Larger Screens */
 @media (min-width: 768px) {
@@ -32,10 +43,13 @@
     border-style: solid;
     border-color: var(--feature-gray-color);
     border-right-width: 1px;
+    padding: 1rem;
     }
 
     .quick_nav_subcontainer_right {
     width: 33.3%;
+    padding: 1rem;
+
     
 }
 }
