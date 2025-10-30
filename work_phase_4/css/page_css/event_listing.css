@@ -25,7 +25,7 @@
         border-style: solid;
     }
 
-    .sidebar-subsection h1 {
+    .sidebar-subsection h2 {
         color: var(--feature-gray-color);
     }
 
@@ -33,7 +33,7 @@
         width: 60%;
     }
 
-    .simple-card h1 {
+    .simple-card h2 {
         line-height: 2.5rem;
     }
 
