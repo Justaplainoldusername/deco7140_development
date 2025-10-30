@@ -8,7 +8,7 @@ ul.breadcrumb {
 li.breadcrumb {
     float: left;
     font-family: Inter, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 ul.breadcrumb li+li:before {
@@ -24,4 +24,13 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+li.breadcrumb {
+    float: left;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+}
 }

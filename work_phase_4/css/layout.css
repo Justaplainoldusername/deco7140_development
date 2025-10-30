@@ -311,7 +311,7 @@ box-shadow:none;
     align-content: center;
 }
 
-.acknowledgement h2, .quicklinks h2 {
+.acknowledgement h3, .quicklinks h3 {
 
     text-align: center;
     padding-bottom: 0rem;

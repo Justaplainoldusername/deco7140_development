@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p class="name">${comment.name}</p>
                     <p class="date" data-time="${comment.created_at}">${friendlyDate}</p>
                     <p class="message">${comment.message}</p>
+
                 </div>
             `;
             container.appendChild(card);

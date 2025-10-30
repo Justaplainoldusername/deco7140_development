@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.className = 'simple-card';
             card.innerHTML = `
                 <div class="card-body">
-                    <h1>${event.event_name}</h1>
+                    <h2>${event.event_name}</h2>
                     <h3>${event.location} | ${new Date(event.date_time).toLocaleString()}</h3>
 
                     <p class="card-title">${event.description}</p>
