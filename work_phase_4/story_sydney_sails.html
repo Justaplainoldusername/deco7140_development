@@ -118,11 +118,12 @@
 
             <section class="container">
                 <!--Breadcrumb Menu-->
+                                <nav aria-label="breadcrumb">
                                 <ul class="breadcrumb">
                     <li class="breadcrumb"><a href="./index.html">Home</a></li>
                     <li class="breadcrumb"><a href="in_development.html">Personal Stories</a></li>
-                    <li class="breadcrumb"><a href="story_sydney_sails.html">Sydney Sails</a></li>
-                </ul>
+                    <li aria-current="Sydney Sails" class="breadcrumb">Sydney Sails</li>
+                </ul></nav>
                 <article class="article-container">
                     <heading class="page-title">Sydney Sails</heading>
                     <p>
@@ -163,6 +164,7 @@
                         your own two hands — a real sense of accomplishment that
                         no screen or gadget could ever give ya.
                     </p>
+                                        <img src="assets/stories/bob-and-his-grandaughter_in_article.png" alt="Bob and his granddaughter working on a model boat together">
                     <p>
                         What makes it even better these days is sharing it with
                         my granddaughter. She’s dead-keen on model building just
@@ -175,6 +177,7 @@
                         carry on the hobby long after I’ve hung up the
                         magnifying glasses.
                     </p>
+
                     <p>
                         At the end of the day, building these ships isn’t just
                         about boats. It’s about memory, patience, and keeping
@@ -189,9 +192,10 @@
                     </p>
                     <!--Comments Section-->
                     <div class="comments"><h2>Comments</h2></div>
+                    <div id="comments-list"></div>
                     <form id="comments-form" enctype="multipart/form-data">
                             <fieldset>
-                                <legend>Comments</legend>
+                                <legend>Leave a comment</legend>
                                 <label for="name">Name</label>
                                 <input
                                     type="text"
@@ -214,7 +218,7 @@
                                 <p id="form-feedback" aria-live="polite"></p>
                             </fieldset>
                         </form>
-                                            <div id="comments-list"></div>
+                                            
 
                 </article>
             </section>

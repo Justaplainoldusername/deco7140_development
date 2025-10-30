@@ -1,27 +1,29 @@
-/*--FORMS    */
+/*--FORMS----*/
 
-#community-form, #event-form, #comments-form {
-  width: 100%;
+#community-form, #comments-form {
+  width: 90%;
   max-width: 100%;
-  /*margin: 1rem auto;*/
-  /*padding: 1rem;*/
   background: #ffffff;
-  /*border: 1px solid #ddd;*/
-  /*border-radius: 12px;*/
-  font-family: system-ui, sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--secondary-color);
 }
-#community-form label, #event-form label, #community-form label {
+
+#comments-form {
+  background-color: var(--warm-background-color);
+  margin-left: 1rem;
+}
+
+#community-form label, #comments-form label {
   display: bl;
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
 
-#community-form input, #event-form input, #comments-form input [type="text"],
-#community-form input [type="email"],
-#community-form input [type="file"],
-#community-form textarea, #event-form textarea, #comments-form textarea {
+#community-form input[type="text"],
+#community-form input[type="email"],
+#community-form input[type="file"],
+#community-form textarea {
   width: 100%;
   padding: 0.6rem;
   border: 1px solid #999;
@@ -30,8 +32,20 @@
   line-height: 1.4;
 }
 
-#community-form input:focus,
-#community-form textarea:focus {
+#comments-form input[type="text"],
+#comments-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: white;
+}
+
+
+#community-form input:focus, #event-form input:focus, #comments-form input:focus,
+#community-form textarea:focus, #event-form textarea:focus, #comments-form textarea:focus {
   outline: 3px solid var(--accent-color);
   outline-offset: 3px;
   border-color: var(--secondary-color)
