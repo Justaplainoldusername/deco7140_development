@@ -1,6 +1,7 @@
 @import url("../component_skeletons/cards.css");
 @import url("../component_skeletons/navigation_buttons.css");
 @import url("../component_skeletons/sidebar.css");
+@import url("../component_skeletons/recent_activity.css");
 
 
 .card-container {
