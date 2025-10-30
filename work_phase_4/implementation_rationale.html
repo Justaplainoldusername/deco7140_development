@@ -144,8 +144,6 @@
 </h4><p>Located at the top of the main page content on the home page, these button-like navigation links have been included to help speed up user navigation to the primary resources. They follow Behavioural Design principles by using a button-like appearance to promote their interactability including a drop shadow and microinteractions. The inclusion of a compass-like icon, which is an image many nautical enthusiasts will find familiar, is a nod to Reflective Design principles. Visceral Design principles include using space between the buttons to differentiate these elements, and separation of button categories using dividers and spacing. 
 </p><p>The resources links meet several WCAG 2.2 guidelines including avoiding color-only cues (Criterion 1.4.1) through the inclusion of slight position shifts and font-weight changes, following a meaningful sequence (Criterion 1.3.2) by continuing from the first element to the last of each category before moving onto the next, and providing alt-text for the included images (Criterion 1.1.1). The buttons also support non-mouse navigability, which is a requirement for our users who prefer touch based or keyboard navigation rather than using a mouse, and makes navigating using these elements very friendly on a mobile device.
 </p></div>
-<div class="simple-card"><h4>Recent Activity
-</h4></div>
 <div class="simple-card"><h4>Community Signup Form
 </h4><p>The Community Signup Form is a dual purpose form that allows visitors to create their website profile while also signing up for the Newsletter as per the client’s requirements. The Newsletter only requires a name and email address field to be completed; all other fields have been made optional and labelled as such to meet ethical design requirements of transparency and honesty. The form uses the provided API.
 </p><p>The form meets WCAG 2.2 standards by providing error identification and suggestions (Criterion 3.3.1) when the form is not properly completed among several other criteria.
@@ -153,7 +151,7 @@ It follows Behavioural Design principles in that it operates in a consistent man
 </p></div>
 <div class="simple-card"><h4>Featured Stories
 </h4><p>This element is included to help encourage meaningful interactions and engagement with the website, promote the unique characteristics and diversity of the community, and allow visitors to learn about the community by linking them to stories from the community. Following Visceral Design principles, The Featured Stories box is visually distinct from other elements on the page which indicates its unique purpose. The fully navigable cards contribute both to the visual appeal of the element, but also provide an easy-to-click navigation item suitable for small or large touch screens or keyboard navigation. 	 
-</p><p>There are many components in each card, and when read by a screen-readers (such as NVDA) the content is confusing. Take for instance the first card which is a link to Bob’s story. Without the ARIA label NVDA reads “Bob and his grandaughter building a model boat together. Graphic. Sydney Sails heading level three. Bob's early memories and the hobby he shares with his grandaughter. Visited link.” Adding a dedicated ARIA label to this page ensure the screenreader now reads: "Read Bob's story: Sydney Sails. Bob's early memories and the hobby he shares with his grandaughter. Visited link." which is a lot more cohesive to someone with visual impairment.  
+</p><p>There are many components in each card, and when read by a screen-readers (such as NVDA) the content is confusing. Take for instance the first card which is a link to Bob’s story. Without the ARIA label NVDA reads “Bob and his grandaughter building a model boat together. Graphic. Sydney Sails heading level three. Bob's early memories and the hobby he shares with his grandaughter. Visited link.” Adding a dedicated ARIA label to this component ensures the screenreader now reads: "Read Bob's story: Sydney Sails. Bob's early memories and the hobby he shares with his grandaughter. Visited link." which is a lot more cohesive to someone with visual impairment.  
 </p></div>
 <div class="simple-card"><h4>Footer</h4><p>The footer uses Visceral Design and Behavioural Design principals in that it reflects quality, predictable website design, is visually distinct from unrelated elements within the page, and provides easy navigation to pages the user may wish to quickly navigate to (such as resources or community interaction) without using the primary navigation bar. For the purposes of this project, the quicklinks sections has been used to provide quick navigation to the pages for assessment. 
 </p><p>The footer allows provides space to acknowledge the traditional owners of the land on which this website was developed, which is an example of the ethical design approach of this site. 
@@ -170,22 +168,22 @@ It follows Behavioural Design principles in that it operates in a consistent man
 <h2>Variation from A3 Design Proposal</h2>
 <h4>Colour Change</h4>
 <p>Upon implementation, it was realised that the proposed Feature Gray #ffeeddc did not produce adequate contrast with either dark or light text to pass WCAG 2.2 Criterion 1.4.3 Perceivable Text Contrast. It was replaced with a darker gray at #7d756e. Used with white text it meets the criterion. </p>
-<h4>Implementation of Commercial Activity Flag</h4>
-<p>!!!!!!!!!!!!!!!!!!!!</p>
-<h3>Accessibility and Ethical Considerations</h3>
+<h2>Accessibility and Ethical Considerations</h2>
 <h4>ARIA</h4>
 <p>To better understand how my website would be understood by screenreader users I installed the NVDA app and familiarised myself with popular websites (such as the Commonwealth Bank website) and my own. Upon listening to my website I realised that components with many elements, such as cards, sounded unnecessarily complex. I resolved this by adding aria-label information. For example, the first card in the Featured Stories region without an ARIA labels reads as follows: “Bob and his grandaughter building a model boat together. Graphic. Sydney Sails heading level three. Bob's early memories and the hobby he shares with his grandaughter. Visited link.” With the ARIA label added it now reads: "Read Bob's story: Sydney Sails. Bob's early memories and the hobby he shares with his grandaughter. Visited link."</p>
 <h4>High Contrast Support</h4>
-<p>I regularly put my computer into high constrast mode to check that allow interactible features were appropriately highlighted. Initially, the navigation button in the hero-box was not obvious in highcontrast mode. I resolved this by putting a border around the button which made no difference to the appearance in normal mode, but allowed this button to become apparent in high-contrast mode.</p>
+<p>I regularly put my computer into high constrast mode to ensure the interactible features were appropriately highlighted. Initially, the navigation button in the hero-box was not obvious in high contrast mode. I resolved this by putting a border around the button which made no difference to the appearance in normal mode, but allowed this button to become apparent in high-contrast mode.</p>
 <img class="img-fluid" src="assets/implementation_rationale/highcontrastmode.png" alt="Example of high-contrast mode on home page">
-<h3>Challenges and Strategies</h3>
+<h4>Following the ACS Code of Professional Ethics</h4>
+<p>Throughout the project, I aimed to ensure that my practice and product aligned with the ACS Code of Professional Ethics. Examples of this in practice include notifying the user that completing the Community Signup Form will subject them to the newsletter (Honesty), respecting the privacy of the users information by only requested that information necessary to complete the task (Trustworthiness), by not undertaking work for which I don't have the necessary skills and knowledge for by omitting features I am unequipped to deliver (Trustworthiness), developing systems which are robust, secure and user-friendly by ensuring all the features in my site meet these criteria (Trustworthiness), ensuring the language and imagery used in the site is inclusive and causes no harm (Respect), and respecting other's intellectual property by using only royalty-free AI generated images in my work (Respect).</p>
+<h2>Challenges and Strategies</h2>
 <h4>Approach to Mobile First Design</h4>
 <p>In order to implement mobile first design, my strategy was to use a wide second screen simultaneously running two sizes of the site, one larger than 768px and one for mobile using the inspect element. This enabled me to quickly see how changes were affecting both sizes. Designs were applied first to the mobile sizing, then adjusted to suit the larger screen. I also regularly tested the website on my mobile as elements, such as the image viewer, display differently on the actual device to how they appear on computer browser.</p>
 <img class="img-fluid" src="assets/implementation_rationale/mobilefirst.png" alt="Demonstration of approach to mobile-first design">
 <h4>Image Viewer</h4>
-<p>In order to meet the user needs for high resolution images, I employed that same viewer that was used in Workphase 3 with a few modifications. Unfortunately, the ARIA labelling on the viewer triggers warnings during the Accessbility Assessment, and it functioned unpredicatable on mobiles devices. In the interest of ensuring ethical design, that is to not undertake work for which I do not have the necessary skills and knowledge and developing systems that are robust, secure and user-friendly, I have opted to omit this feature from my design until I have the skills and knowledge to successfully implement it. </p>
+<p>In order to meet the user needs for high resolution images, I employed the same viewer that was used in Workphase 3 with a few modifications. Unfortunately, the ARIA labelling on the viewer triggers warnings during the Accessbility Assessment, and it functioned unpredictably on mobile devices. In the interest of ensuring ethical design, that is to not undertake work for which I do not have the necessary skills and knowledge and developing systems that are robust, secure and user-friendly, I have opted to omit this feature from my design until I have the skills and knowledge to successfully implement it. </p>
 
-<h3>Accessibility Audit</h3>
+<h2>Accessibility Audits</h2>
 <h4>Index</h4>
 <img class="img-fluid" src="assets/implementation_rationale/accessibility_assessment_index.png">
 <h4>Techniques and Mistakes</h4>
@@ -196,7 +194,8 @@ It follows Behavioural Design principles in that it operates in a consistent man
 <img class="img-fluid" src="assets/implementation_rationale/accessibility_assessment_sydneysails.png">
 <h4>Events Listing</h4>
 <img class="img-fluid" src="assets/implementation_rationale/accessibility_assessment_eventslisting.png">
-<h3>GitHub Repository</h3>
+<h2>GitHub Repository</h2>
+<p><a href="https://github.com/Justaplainoldusername/deco7140_development">Visit my GitHub Repository</a></p>
 
             </section>
             <!--Footer-->
