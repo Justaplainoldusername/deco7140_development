@@ -134,10 +134,15 @@
             </header>
         <main>
             <section class="container">
-                    <div class="spotlight-container-content">
+                <div class="page-title">Upcoming Events</div>
+                <div id="event-list"></div>
+                <!--Sidebar-->
+                <section class="sidebar">
+                    <div class="sidebar-subsection">
+                        <h1>Have an event to share?</h1>
                         <form id="event-form"   enctype="multipart/form-data">
                             <fieldset>
-                                <legend>Post Your Event</legend>
+                                <legend>Post your event here.</legend>
                                 <label for="event_name">Event Name</label>
                                 <input
                                     type="text"
@@ -177,7 +182,7 @@
                                 <label for="photo"
                                     >Upload photo (Optional. Max 10MB)</label
                                 >
-                                <input type="file" id="photo" name="photo" />
+                                <input type="file" id="photo" name="genericevent_photo" />
 
                                 <button type="submit">
                                     Submit Event
@@ -186,9 +191,10 @@
                                 <p id="form-feedback" aria-live="polite"></p>
                             </fieldset>
                         </form>
-                        
-                    </div>
-                    <div id="event-list"></div>
+                        </div>
+                </section>
+
+                    
             </section>
             <!--Footer-->
             <footer class="site-footer">

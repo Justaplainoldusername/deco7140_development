@@ -24,24 +24,36 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        if (data.length === 0) {
-            container.innerHTML = '<p>No events yet.</p>';
+        // Get today's date at midnight (so comparisons are consistent)
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        // Filter events to only include those happening today or later
+        const upcomingEvents = data.filter(event => {
+            const eventDate = new Date(event.date_time);
+            return eventDate >= today;
+        });
+
+        if (upcomingEvents.length === 0) {
+            container.innerHTML = '<p>No upcoming events.</p>';
             return;
         }
 
+        // Sort events by date (optional but useful)
+        upcomingEvents.sort((a, b) => new Date(a.date_time) - new Date(b.date_time));
+
         container.innerHTML = '';
-        data.forEach(event => {
+        upcomingEvents.forEach(event => {
             const card = document.createElement('div');
-            card.className = 'card mb-3';
+            card.className = 'simple-card';
             card.innerHTML = `
                 <div class="card-body">
-                    <p class="card-title">${event.event_name}</p>
-                    <p class="card-title">${event.location}</p>
-                    <p class="card-title">${event.organiser}</p>
-                    <p class="card-title">${event.type}</p>
+                    <h1>${event.event_name}</h1>
+                    <h3>${event.location} | ${new Date(event.date_time).toLocaleString()}</h3>
+
                     <p class="card-title">${event.description}</p>
-                    <p class="card-title">${event.date_time}</p>
-                    ${event.photo ? `<img src="${event.genericevent_photo}" alt="${event.event_name}" class="event-photo">` : ''}
+
+                    ${event.genericevent_photo ? `<img src="${event.genericevent_photo}" alt="${event.event_name}" class="event-photo">` : ''}
                 </div>
             `;
             container.appendChild(card);
@@ -68,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (success) {
             feedback.textContent = data.message || "Event added successfully!";
             form.reset();
-            loadEvents();
+            loadEvents(); // reload to show the new event
         } else {
             feedback.textContent = data.message || "Something went wrong.";
         }

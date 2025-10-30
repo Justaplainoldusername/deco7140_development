@@ -1,6 +1,8 @@
 /*--FORMS----*/
 
-#community-form, #comments-form {
+
+/*---community---*/
+#community-form, #comments-form, #event-form {
   width: 90%;
   max-width: 100%;
   background: #ffffff;
@@ -8,12 +10,14 @@
   color: var(--secondary-color);
 }
 
-#comments-form {
+
+
+#comments-form, #event-form {
   background-color: var(--warm-background-color);
   margin-left: 1rem;
 }
 
-#community-form label, #comments-form label {
+#community-form label, #comments-form label, #event-form label {
   display: bl;
   font-weight: 600;
   margin-top: 1rem;
@@ -32,7 +36,20 @@
   line-height: 1.4;
 }
 
+#event-form input[type="text"],
+#event-form input[type="file"],
+#event-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: white;
+}
+
 #comments-form input[type="text"],
+#event-form input[type="text"],
 #comments-form textarea {
   width: 100%;
   padding: 0.6rem;

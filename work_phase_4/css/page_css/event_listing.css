@@ -1,3 +1,46 @@
 @import url("../component_skeletons/navigation_buttons.css");
 @import url("../component_skeletons/forms.css");
-@import url("../component_skeletons/buttons.css");
+@import url("../component_skeletons/sidebar.css");
+
+
+
+.simple-card h3 {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+@media (min-width: 768px) {
+    
+    .sidebar {
+        width: 35%;
+        top: 700px;
+    }
+
+    .sidebar-subsection {
+        background-color: white;
+        border: 1px;
+        border-color: var(--feature-gray-color);
+        border-style: solid;
+    }
+
+    .sidebar-subsection h1 {
+        color: var(--feature-gray-color);
+    }
+
+    .simple-card {
+        width: 60%;
+    }
+
+    .simple-card h1 {
+        line-height: 2.5rem;
+    }
+
+    .simple-card h3 {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    #event-form {
+        background-color: white;
+    }
+}
