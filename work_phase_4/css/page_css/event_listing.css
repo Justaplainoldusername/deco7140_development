@@ -3,7 +3,9 @@
 @import url("../component_skeletons/sidebar.css");
 
 
-
+.simple-card {
+    margin-bottom: 3rem;
+}
 .simple-card h3 {
         font-size: 0.8rem;
         padding: 0;
